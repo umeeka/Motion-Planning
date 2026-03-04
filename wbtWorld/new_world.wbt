@@ -1,0 +1,5340 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/Road.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/Crossroad.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/buildings/protos/SimpleBuilding.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/buildings/protos/CommercialBuilding.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/buildings/protos/CyberboticsTower.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/buildings/protos/TheThreeTowers.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/buildings/protos/FastFoodRestaurant.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/buildings/protos/Hotel.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/buildings/protos/BigGlassTower.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/vehicles/protos/range_rover/RangeRoverSportSVRSimple.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/vehicles/protos/tesla/TeslaModel3Simple.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/vehicles/protos/toyota/ToyotaPriusSimple.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/vehicles/protos/mercedes_benz/MercedesBenzSprinterSimple.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/vehicles/protos/bmw/BmwX5Simple.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/vehicles/protos/citroen/CitroenCZeroSimple.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/vehicles/protos/lincoln/LincolnMKZSimple.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/default/protos/SumoInterface.proto"
+
+WorldInfo {
+  info [
+    "World generated using the Open Street Map to Webots importer"
+    "Author: David Mansolino <david.mansolino@epfl.ch>"
+  ]
+  gpsCoordinateSystem "WGS84"
+  gpsReference 12.968166 77.639474 0
+  lineScale 2
+}
+Viewpoint {
+  orientation -0.4427165652501774 0.25371750478868055 0.8600171339089072 2.2257454613050403
+  position 100.24617780855144 -335.87049565164676 522.1016802509117
+  near 3
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  translation 0 0 -0.02
+  size 473 589
+  appearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/default/worlds/textures/grass.jpg"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
+BigGlassTower {
+  translation 42.2 -89.52 0
+}
+BigGlassTower {
+  translation 40.4378 -69.4378 0
+  rotation 0 0 1 1.309
+  name "big glass tower(2)"
+}
+BigGlassTower {
+  translation 42.2 -49.53 0
+  name "big glass tower(3)"
+}
+Hotel {
+  translation 37.16 48.82 0
+}
+Hotel {
+  translation -7.12 67.33 0
+  name "hotel(1)"
+}
+FastFoodRestaurant {
+  translation 12.2259 56.4286 0
+  rotation 0 0 1 2.87979
+}
+FastFoodRestaurant {
+  translation 8.61782 42.9635 0
+  rotation 0 0 1 2.87979
+  name "fast food restaurant(1)"
+}
+TheThreeTowers {
+  translation 76.7233 -141.721 0
+  rotation 0 0 -1 -2.8797953071795863
+}
+TheThreeTowers {
+  translation 43.0968 -134.41 0
+  rotation 0 0 1 -5.307179586466759e-06
+  name "three towers(1)"
+}
+CyberboticsTower {
+  translation -85.22 93.7 0
+  name "Cyberbotics tower(2)"
+}
+CyberboticsTower {
+  translation -58.37 105.12 0
+}
+CyberboticsTower {
+  translation 50.13 98.38 0
+  name "Cyberbotics tower(1)"
+}
+CommercialBuilding {
+  translation -18.2101 156.97 0
+  rotation 0 0 1 4.692820414042842e-06
+}
+CommercialBuilding {
+  translation 88.51 96.83 0
+  rotation 0 0 1 -0.261795307179586
+  name "commercial building(1)"
+}
+Crossroad {
+  translation 131.708174 166.653043 0.01
+  name "crossroad(1)"
+  id "10181921356"
+  shape [
+    4.413452 -0.722111 0
+    3.098451 -3.224841 0
+    -0.720802 -4.413666 0
+    -3.225773 -3.097482 0
+    -4.413449 0.722129 0
+    3.22576 3.097494 0
+    4.413452 -0.722111 0
+  ]
+  connectedRoadIDs [
+    "1112836616"
+    "36327869_1"
+    "36327869_2"
+  ]
+}
+Crossroad {
+  translation 53.597924 80.822305 0.01
+  name "crossroad(2)"
+  id "10181939131"
+  shape [
+    4.231967 -1.445841 0
+    2.674371 -3.584374 0
+    -1.262876 -4.290122 0
+    -2.674937 3.583952 0
+    1.2622 4.290321 0
+    3.695853 2.518069 0
+    4.231967 -1.445841 0
+  ]
+  connectedRoadIDs [
+    "1112837803"
+    "59358857_3"
+    "59358857_4"
+  ]
+}
+Crossroad {
+  translation 82.055968 -103.932247 0.01
+  name "crossroad(3)"
+  id "1420066737"
+  shape [
+    2.682139 -3.578565 0
+    -1.253568 -4.292851 0
+    -2.435712 -3.750641 0
+    -4.46194 -0.301815 0
+    -2.269889 3.853259 0
+    1.720674 4.127867 0
+    2.682139 -3.578565 0
+  ]
+  connectedRoadIDs [
+    "331223021_4"
+    "331223021_6"
+    "59358857_6"
+  ]
+}
+Crossroad {
+  translation -12.357833 -103.410341 0.01
+  name "crossroad(4)"
+  id "1485671138"
+  shape [
+    2.365671 3.795207 0
+    1.870972 -4.061953 0
+    -2.126979 -3.93395 0
+    -3.657084 -2.57405 0
+    -4.253491 1.381238 0
+    -1.616763 4.169661 0
+    2.365671 3.795207 0
+  ]
+  connectedRoadIDs [
+    "175055146"
+    "331223021_1"
+    "331223021_3"
+  ]
+}
+Crossroad {
+  translation 62.586643 -41.118837 0.01
+  name "crossroad(5)"
+  id "1857029047"
+  shape [
+    4.347847 -1.047008 0
+    3.129866 -3.194361 0
+    -0.677569 -4.420509 0
+    -1.903717 -0.613074 0
+    -1.917463 -0.568625 0
+    -3.054713 3.266302 0
+    0.780214 4.403552 0
+    3.446315 2.850073 0
+    4.347847 -1.047008 0
+  ]
+  connectedRoadIDs [
+    "175055150"
+    "59358790_2"
+    "59358790_5"
+  ]
+}
+Crossroad {
+  translation 48.588462 -101.629205 0.01
+  name "crossroad(6)"
+  id "1857029049"
+  shape [
+    2.269889 -3.853259 0
+    -1.720674 -4.127867 0
+    -3.446315 -2.850073 0
+    -4.347847 1.047008 0
+    -1.897114 4.04981 0
+    2.10158 3.947577 0
+    2.269889 -3.853259 0
+  ]
+  connectedRoadIDs [
+    "175055150"
+    "331223021_2"
+    "331223021_4"
+  ]
+}
+Crossroad {
+  translation -0.019336 -21.583062 0.01
+  name "crossroad(7)"
+  id "1857029051"
+  shape [
+    4.253491 -1.381238 0
+    3.149385 -3.175118 0
+    -0.650463 -4.424579 0
+    -1.899924 -0.624731 0
+    -1.920178 -0.55939 0
+    -3.038958 3.280966 0
+    0.801398 4.399746 0
+    3.657084 2.57405 0
+    4.253491 -1.381238 0
+  ]
+  connectedRoadIDs [
+    "175055146"
+    "59358790_3"
+    "59358790_4"
+  ]
+}
+Crossroad {
+  translation -39.641052 96.175658 0.01
+  name "crossroad(8)"
+  id "3198701808"
+  shape [
+    4.15607 1.651388 0
+    3.814753 -2.334023 0
+    1.816677 -4.086525 0
+    -2.179213 -3.905257 0
+    -4.156163 -1.651154 0
+    -3.814621 2.334238 0
+    4.15607 1.651388 0
+  ]
+  connectedRoadIDs [
+    "128510751_7"
+    "128510751_8"
+    "313835090"
+  ]
+}
+Crossroad {
+  translation -161.375548 74.113643 0.01
+  name "crossroad(9)"
+  id "3532729011"
+  shape [
+    4.143445 1.682814 0
+    3.832318 -2.305068 0
+    1.762455 -4.110201 0
+    -2.230688 -3.876085 0
+    -4.143541 -1.682577 0
+    -3.832187 2.305286 0
+    4.143445 1.682814 0
+  ]
+  connectedRoadIDs [
+    "346768561_1"
+    "346768561_8"
+    "385360495"
+  ]
+}
+Crossroad {
+  translation -14.745851 -194.721424 0.01
+  name "crossroad(10)"
+  id "736014389"
+  shape [
+    4.155662 1.652415 0
+    3.815329 -2.33308 0
+    -0.170567 -1.992713 0
+    -4.155994 -1.65158 0
+    -3.81486 2.333847 0
+    -1.775449 4.104605 0
+    2.218414 3.883122 0
+    4.155662 1.652415 0
+  ]
+  connectedRoadIDs [
+    "128510751_1"
+    "128510751_5"
+    "59358863_1"
+  ]
+}
+Crossroad {
+  translation -38.369255 81.325453 0.01
+  name "crossroad(11)"
+  id "736207248"
+  shape [
+    4.15597 1.65164 0
+    3.814894 -2.333792 0
+    2.383829 -3.783829 0
+    -1.596766 -4.17736 0
+    -4.15607 -1.651388 0
+    -3.814753 2.334023 0
+    -1.762455 4.110201 0
+    2.230688 3.876085 0
+    4.15597 1.65164 0
+  ]
+  connectedRoadIDs [
+    "128510751_2"
+    "128510751_8"
+    "385360495"
+    "59358857_1"
+  ]
+}
+Crossroad {
+  translation 97.45058 -106.726191 0.01
+  name "crossroad(12)"
+  id "736207261"
+  shape [
+    4.289605 -1.264631 0
+    2.642813 -3.607705 0
+    -1.300476 -4.278874 0
+    -2.682139 3.578565 0
+    1.253568 4.292851 0
+    3.585468 2.672905 0
+    4.289605 -1.264631 0
+  ]
+  connectedRoadIDs [
+    "128510763_1"
+    "331223021_5"
+    "331223021_6"
+  ]
+}
+Crossroad {
+  translation -30.107921 -15.238925 0.01
+  name "crossroad(13)"
+  id "736207283"
+  shape [
+    4.155907 1.651797 0
+    3.814982 -2.333648 0
+    2.321725 -3.82225 0
+    -1.664765 -4.15073 0
+    -4.155879 -1.651868 0
+    -3.815022 2.333583 0
+    -1.691938 4.139728 0
+    2.296619 3.837387 0
+    4.155907 1.651797 0
+  ]
+  connectedRoadIDs [
+    "128510751_4"
+    "128510751_9"
+    "59358790_1"
+    "59358827"
+  ]
+}
+Crossroad {
+  translation 22.94877 141.326752 0.01
+  name "crossroad(14)"
+  id "736207308"
+  shape []
+  connectedRoadIDs [
+    "59358747"
+    "995154348"
+  ]
+}
+Crossroad {
+  translation -139.880294 -201.660843 0.01
+  name "crossroad(15)"
+  id "736207363"
+  shape [
+    4.158925 1.644184 0
+    3.810702 -2.34063 0
+    1.775449 -4.104605 0
+    -2.218414 -3.883122 0
+    -4.143323 -1.683116 0
+    -3.832486 2.304789 0
+    -1.775052 4.104776 0
+    2.21879 3.882908 0
+    4.158925 1.644184 0
+  ]
+  connectedRoadIDs [
+    "346768561_6"
+    "346768561_7"
+    "59358863_1"
+    "59358863_2"
+  ]
+}
+Crossroad {
+  translation 91.422585 -140.434774 0.01
+  name "crossroad(16)"
+  id "736207370"
+  shape [
+    4.304421 -1.213242 0
+    2.72663 -3.544784 0
+    -1.199849 -4.308174 0
+    -3.585468 -2.672905 0
+    -4.289605 1.264631 0
+    3.553247 2.715592 0
+    4.304421 -1.213242 0
+  ]
+  connectedRoadIDs [
+    "128510763_1"
+    "128510763_2"
+    "59358733"
+  ]
+}
+Crossroad {
+  translation -143.249883 -158.430402 0.01
+  name "crossroad(17)"
+  id "736207375"
+  shape [
+    4.143323 1.683116 0
+    3.832486 -2.304789 0
+    1.730525 -4.123746 0
+    -2.260682 -3.858668 0
+    -4.143153 -1.683532 0
+    -3.832718 2.304404 0
+    0.155418 1.993952 0
+    4.143323 1.683116 0
+  ]
+  connectedRoadIDs [
+    "346768561_3"
+    "346768561_7"
+    "59358875"
+  ]
+}
+Crossroad {
+  translation 30.039437 -31.466948 0.01
+  name "crossroad(18)"
+  id "736207387"
+  shape [
+    4.195645 -1.548085 0
+    3.054713 -3.266302 0
+    -0.780214 -4.403552 0
+    -2.553222 -3.671656 0
+    -4.469258 -0.160416 0
+    -3.149385 3.175118 0
+    0.650463 4.424579 0
+    3.755854 2.427665 0
+    4.195645 -1.548085 0
+  ]
+  connectedRoadIDs [
+    "175055148"
+    "59358766"
+    "59358790_2"
+    "59358790_4"
+  ]
+}
+Crossroad {
+  translation -146.722353 -113.822176 0.01
+  name "crossroad(19)"
+  id "736207402"
+  shape [
+    4.143153 1.683532 0
+    3.832718 -2.304404 0
+    1.690536 -4.1403 0
+    -2.297919 -3.836609 0
+    -4.143547 -1.682564 0
+    -3.832179 2.305299 0
+    4.143153 1.683532 0
+  ]
+  connectedRoadIDs [
+    "346768561_3"
+    "346768561_5"
+    "59358800"
+  ]
+}
+Crossroad {
+  translation -25.876591 -64.703489 0.01
+  name "crossroad(20)"
+  id "736207410"
+  shape [
+    4.156184 1.6511 0
+    3.814591 -2.334287 0
+    -4.155907 -1.651797 0
+    -3.814982 2.333648 0
+    -1.697116 4.137608 0
+    2.291817 3.840257 0
+    4.156184 1.6511 0
+  ]
+  connectedRoadIDs [
+    "128510751_3"
+    "128510751_9"
+    "59358858_2"
+  ]
+}
+Crossroad {
+  translation 84.406936 -177.128395 0.01
+  name "crossroad(21)"
+  id "736207414"
+  shape [
+    2.686797 -3.575069 0
+    -1.247977 -4.294479 0
+    -3.553247 -2.715592 0
+    -4.304421 1.213242 0
+    -2.55738 3.668761 0
+    1.400581 4.247161 0
+    2.686797 -3.575069 0
+  ]
+  connectedRoadIDs [
+    "128510763_2"
+    "59358874_1"
+    "59358874_2"
+  ]
+}
+Crossroad {
+  translation -157.559301 25.198709 0.01
+  name "crossroad(22)"
+  id "736207435"
+  shape [
+    4.143279 1.683222 0
+    3.832545 -2.30469 0
+    1.711874 -4.131524 0
+    -2.278094 -3.848413 0
+    -4.143445 -1.682814 0
+    -3.832318 2.305068 0
+    4.143279 1.683222 0
+  ]
+  connectedRoadIDs [
+    "346768561_2"
+    "346768561_8"
+    "59358762"
+  ]
+}
+Crossroad {
+  translation 108.034798 -59.713895 0.01
+  name "crossroad(23)"
+  id "736207439"
+  shape [
+    4.46194 0.301815 0
+    1.013114 -1.724413 0
+    0.538533 -1.926131 0
+    -3.31373 -3.003198 0
+    -4.390796 0.849065 0
+    -3.596806 2.657628 0
+    -0.031982 4.472022 0
+    2.435712 3.750641 0
+    4.46194 0.301815 0
+  ]
+  connectedRoadIDs [
+    "59358790_5"
+    "59358857_5"
+    "59358857_6"
+  ]
+}
+Crossroad {
+  translation 11.773722 88.326056 0.01
+  name "crossroad(24)"
+  id "736207443"
+  shape [
+    4.381576 -0.895431 0
+    2.674937 -3.583952 0
+    -1.2622 -4.290321 0
+    -4.366906 5.824957 0
+    -0.630415 7.252763 0
+    0.47523 7.264582 0
+    4.24139 5.916977 0
+    4.381576 -0.895431 0
+  ]
+  connectedRoadIDs [
+    "313835090"
+    "59358784"
+    "59358857_1"
+    "59358857_3"
+  ]
+}
+Crossroad {
+  translation 102.615425 71.416948 0.01
+  name "crossroad(25)"
+  id "736207483"
+  shape [
+    4.462798 0.288845 0
+    2.908755 -3.396931 0
+    -3.446463 -2.849894 0
+    -4.347793 1.047234 0
+    -2.744801 3.530732 0
+    1.177705 4.31428 0
+    4.462798 0.288845 0
+  ]
+  connectedRoadIDs [
+    "36327869_2"
+    "59358857_2"
+    "59358857_5"
+  ]
+}
+Crossroad {
+  translation -43.04064 135.844883 0.01
+  name "crossroad(26)"
+  id "736207514"
+  shape [
+    4.156163 1.651154 0
+    3.814621 -2.334238 0
+    1.661987 -4.151843 0
+    -2.324282 -3.820696 0
+    -4.14724 -1.67344 0
+    -3.827096 2.313727 0
+    -1.709188 4.132635 0
+    2.280595 3.846932 0
+    4.156163 1.651154 0
+  ]
+  connectedRoadIDs [
+    "1201026023"
+    "1201026024_1"
+    "128510751_7"
+    "59358747"
+  ]
+}
+Crossroad {
+  translation -165.51053 127.074962 0.01
+  name "crossroad(27)"
+  id "736207542"
+  shape [
+    4.143541 1.682577 0
+    3.832187 -2.305286 0
+    1.709188 -4.132635 0
+    -2.280595 -3.846932 0
+    -1.70965 4.132444 0
+    2.280165 3.847187 0
+    4.143541 1.682577 0
+  ]
+  connectedRoadIDs [
+    "1201026024_1"
+    "1201026024_2"
+    "346768561_1"
+  ]
+}
+Crossroad {
+  translation -153.678586 -24.60583 0.01
+  name "crossroad(28)"
+  id "736207557"
+  shape [
+    4.143219 1.683371 0
+    3.832628 -2.304552 0
+    1.691938 -4.139728 0
+    -2.296619 -3.837387 0
+    -4.143279 -1.683222 0
+    -3.832545 2.30469 0
+    4.143219 1.683371 0
+  ]
+  connectedRoadIDs [
+    "346768561_2"
+    "346768561_4"
+    "59358827"
+  ]
+}
+Crossroad {
+  translation -18.518392 -16.193883 0.01
+  name "crossroad(29)"
+  id "736207573"
+  shape [
+    3.038958 -3.280966 0
+    -0.801398 -4.399746 0
+    -3.22555 -3.097714 0
+    -4.413501 0.721812 0
+    -2.321725 3.82225 0
+    1.664765 4.15073 0
+    3.038958 -3.280966 0
+  ]
+  connectedRoadIDs [
+    "59358784"
+    "59358790_1"
+    "59358790_3"
+  ]
+}
+Crossroad {
+  translation 22.203596 -102.303777 0.01
+  name "crossroad(30)"
+  id "736207580"
+  shape [
+    4.144686 1.679756 0
+    3.830616 -2.307895 0
+    1.897114 -4.04981 0
+    -2.10158 -3.947577 0
+    -3.755854 -2.427665 0
+    -4.195645 1.548085 0
+    -1.870972 4.061953 0
+    2.126979 3.93395 0
+    4.144686 1.679756 0
+  ]
+  connectedRoadIDs [
+    "175055148"
+    "331223021_2"
+    "331223021_3"
+    "59358781_1"
+  ]
+}
+Crossroad {
+  translation -149.836 -73.943905 0.01
+  name "crossroad(31)"
+  id "736207598"
+  shape [
+    4.143547 1.682564 0
+    3.832179 -2.305299 0
+    1.697116 -4.137608 0
+    -2.291817 -3.840257 0
+    -4.143219 -1.683371 0
+    -3.832628 2.304552 0
+    -1.695901 4.138106 0
+    2.292944 3.839584 0
+    4.143547 1.682564 0
+  ]
+  connectedRoadIDs [
+    "346768561_4"
+    "346768561_5"
+    "59358858_1"
+    "59358858_2"
+  ]
+}
+Crossroad {
+  translation -18.56103 -150.149112 0.01
+  name "crossroad(32)"
+  id "736207605"
+  shape [
+    4.155994 1.65158 0
+    3.81486 -2.333847 0
+    -4.155894 -1.651831 0
+    -3.815001 2.333616 0
+    -1.730525 4.123746 0
+    2.260682 3.858668 0
+    4.155994 1.65158 0
+  ]
+  connectedRoadIDs [
+    "128510751_5"
+    "128510751_6"
+    "59358875"
+  ]
+}
+Crossroad {
+  translation 27.441164 -168.803663 0.01
+  name "crossroad(33)"
+  id "736207608"
+  shape [
+    4.249482 1.393522 0
+    3.664507 -2.563472 0
+    2.55738 -3.668761 0
+    -1.400581 -4.247161 0
+    -4.144686 -1.679756 0
+    -3.830616 2.307895 0
+    0.157035 1.993825 0
+    0.292487 1.978497 0
+    4.249482 1.393522 0
+  ]
+  connectedRoadIDs [
+    "59358781_1"
+    "59358781_2"
+    "59358874_2"
+  ]
+}
+Crossroad {
+  translation -34.314283 33.943618 0.01
+  name "crossroad(34)"
+  id "736207618"
+  shape [
+    4.155879 1.651868 0
+    3.815022 -2.333583 0
+    -0.170538 -1.992716 0
+    -4.15597 -1.65164 0
+    -3.814894 2.333792 0
+    -1.711874 4.131524 0
+    2.278094 3.848413 0
+    4.155879 1.651868 0
+  ]
+  connectedRoadIDs [
+    "128510751_2"
+    "128510751_4"
+    "59358762"
+  ]
+}
+Crossroad {
+  translation -22.477412 -104.361849 0.01
+  name "crossroad(35)"
+  id "736207625"
+  shape [
+    4.155894 1.651831 0
+    3.815001 -2.333616 0
+    1.616763 -4.169661 0
+    -2.365671 -3.795207 0
+    -4.156184 -1.6511 0
+    -3.814591 2.334287 0
+    -1.690536 4.1403 0
+    2.297919 3.836609 0
+    4.155894 1.651831 0
+  ]
+  connectedRoadIDs [
+    "128510751_3"
+    "128510751_6"
+    "331223021_1"
+    "59358800"
+  ]
+}
+Crossroad {
+  translation 72.552427 77.424731 0.01
+  name "crossroad(36)"
+  id "736207628"
+  shape [
+    4.25582 -1.374045 0
+    2.7459 -3.529877 0
+    -1.176362 -4.314646 0
+    -1.961131 -0.392385 0
+    -1.968624 -0.352874 0
+    -2.674371 3.584374 0
+    1.262876 4.290122 0
+    3.652728 2.580229 0
+    4.25582 -1.374045 0
+  ]
+  connectedRoadIDs [
+    "59358766"
+    "59358857_2"
+    "59358857_4"
+  ]
+}
+Crossroad {
+  translation 56.531251 133.270914 0.01
+  name "crossroad(37)"
+  id "9189514623"
+  shape [
+    4.369387 -0.953129 0
+    -3.382669 -2.92533 0
+    -4.369865 0.950937 0
+    -2.877885 3.423124 0
+    1.011768 4.356182 0
+    3.384136 2.923632 0
+    4.369387 -0.953129 0
+  ]
+  connectedRoadIDs [
+    "1185473492_1"
+    "1185473492_2"
+    "995154348"
+  ]
+}
+Road {
+  translation 22.94877 141.326752 0.01
+  name "1st Cross Road"
+  id "59358747"
+  startJunction "736207308"
+  endJunction "736207514"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -62.003141 -5.150722 0
+  ]
+  startingAngle [
+    -3.224474
+  ]
+  endingAngle [
+    -3.224474
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -38.304252 33.660508 0.01
+  name "3rd Cross Road"
+  id "59358762"
+  startJunction "736207618"
+  endJunction "736207435"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -115.26508 -8.178689 0
+  ]
+  startingAngle [
+    -3.212429
+  ]
+  endingAngle [
+    -3.212429
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 71.949335 73.470457 0.01
+  name "Muthyalamma Temple Street"
+  id "59358766"
+  startJunction "736207628"
+  endJunction "736207387"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -2.496663 -16.369793 0
+    -3.491914 -22.894373 0
+    -6.401172 -26.322757 0
+    -10.330453 -44.581681 0
+    -16.69198 -59.945192 0
+    -27.44931 -78.437592 0
+    -39.993863 -101.426165 0
+  ]
+  startingAngle [
+    -4.561039
+  ]
+  endingAngle [
+    -4.212864
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 10.609822 83.986857 0.01
+  name "road(1)"
+  id "59358784"
+  startJunction "736207443"
+  endJunction "736207573"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -12.725051 -47.440946 0
+    -27.940262 -96.361215 0
+  ]
+  startingAngle [
+    -4.691814
+  ]
+  endingAngle [
+    -4.410852
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -142.733899 -113.518485 0.01
+  name "6th Cross Road"
+  id "59358800"
+  startJunction "736207402"
+  endJunction "736207625"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    116.268032 8.852945 0
+  ]
+  startingAngle [
+    -0.075996
+  ]
+  endingAngle [
+    -0.075996
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -149.690029 -24.303489 0.01
+  name "4th Cross Road"
+  id "59358827"
+  startJunction "736207557"
+  endJunction "736207283"
+  width 4
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    115.59355 8.762224 0
+  ]
+  startingAngle [
+    -0.075657
+  ]
+  endingAngle [
+    -0.075657
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -139.258676 -158.165323 0.01
+  name "7th Cross Road"
+  id "59358875"
+  startJunction "736207375"
+  endJunction "736207605"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    116.706438 7.751133 0
+  ]
+  startingAngle [
+    -0.066318
+  ]
+  endingAngle [
+    -0.066318
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -0.615743 -25.53835 0.01
+  name "13th A Main"
+  id "175055146"
+  startJunction "1857029051"
+  endJunction "1485671138"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -11.145684 -73.916704 0
+  ]
+  startingAngle [
+    -4.562729
+  ]
+  endingAngle [
+    -4.562729
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 29.599646 -35.442698 0.01
+  name "13th B Main"
+  id "175055148"
+  startJunction "736207387"
+  endJunction "736207580"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -6.956261 -62.88533 0
+  ]
+  startingAngle [
+    -4.602219
+  ]
+  endingAngle [
+    -4.602219
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 61.685111 -45.015918 0.01
+  name "13th C Main"
+  id "175055150"
+  startJunction "1857029047"
+  endJunction "1857029049"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -12.195116 -52.716206 0
+  ]
+  startingAngle [
+    -4.485053
+  ]
+  endingAngle [
+    -4.485053
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 5.234862 90.824717 0.01
+  name "road(2)"
+  id "313835090"
+  startJunction "736207443"
+  endJunction "3198701808"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -17.27924 6.602825 0
+    -40.880023 5.532209 0
+  ]
+  startingAngle [
+    -2.77659
+  ]
+  endingAngle [
+    -3.186925
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -157.382405 74.347759 0.01
+  name "2nd Cross Road"
+  id "385360495"
+  startJunction "3532729011"
+  endJunction "736207248"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    115.020007 6.743578 0
+  ]
+  startingAngle [
+    -0.058563
+  ]
+  endingAngle [
+    -0.058563
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 52.641598 134.203972 0.01
+  name "road(3)"
+  id "995154348"
+  startJunction "9189514623"
+  endJunction "736207308"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -29.692827 7.12278 0
+  ]
+  startingAngle [
+    -2.906159
+  ]
+  endingAngle [
+    -3.224474
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 135.527428 165.464218 0.01
+  name "road(4)"
+  id "1112836616"
+  startJunction "10181921356"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    21.802764 -6.786578 0
+    20.89244 -9.749153 0
+  ]
+  startingAngle [
+    0.301765
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 53.06181 76.858395 0.01
+  name "road(5)"
+  id "1112837803"
+  startJunction "10181939131"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -1.026997 -7.593396 0
+    -4.670466 -33.145351 0
+  ]
+  startingAngle [
+    -4.577956
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -43.360783 139.832051 0.01
+  name "13th Main Road"
+  id "1201026023"
+  startJunction "736207514"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -4.305898 53.627011 0
+    -4.837344 62.187763 0
+  ]
+  startingAngle [
+    -1.650918
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 146.591768 221.787849 0.01
+  name "15th Main Road"
+  id "36327869_1"
+  endJunction "10181921356"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -2.113265 -9.739054 0
+    -3.814837 -15.402401 0
+    -4.466967 -18.709734 0
+    -6.81612 -29.189513 0
+    -13.695917 -51.315196 0
+  ]
+  endingAngle [
+    -4.410924
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 130.520483 162.833437 0.01
+  name "15th Main Road(1)"
+  id "36327869_2"
+  startJunction "10181921356"
+  endJunction "736207483"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -11.604605 -37.32031 0
+    -26.389781 -84.864804 0
+    -27.003728 -87.519361 0
+  ]
+  startingAngle [
+    -4.41092
+  ]
+  endingAngle [
+    -4.485105
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 96.746443 -110.663728 0.01
+  name "13th D Main"
+  id "128510763_1"
+  startJunction "736207261"
+  endJunction "736207370"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -4.619722 -25.83351 0
+  ]
+  startingAngle [
+    -4.535433
+  ]
+  endingAngle [
+    -4.535433
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 90.67141 -144.363608 0.01
+  name "13th D Main(1)"
+  id "128510763_2"
+  startJunction "736207370"
+  endJunction "736207414"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -5.513299 -28.835954 0
+  ]
+  startingAngle [
+    -4.523474
+  ]
+  endingAngle [
+    -4.523474
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 22.517665 -106.291428 0.01
+  name "13th B Main(1)"
+  id "59358781_1"
+  startJunction "736207580"
+  endJunction "736207608"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    4.609429 -58.524584 0
+  ]
+  startingAngle [
+    1.492198
+  ]
+  endingAngle [
+    1.492198
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 28.026139 -172.760657 0.01
+  name "13th B Main(2)"
+  id "59358781_2"
+  startJunction "736207608"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    4.48562 -30.342451 0
+    5.162077 -69.008446 0
+  ]
+  startingAngle [
+    1.424026
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -34.388661 80.931921 0.01
+  name "2nd Cross Road(1)"
+  id "59358857_1"
+  startJunction "736207248"
+  endJunction "736207443"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    19.978164 -1.975092 0
+    39.571603 5.035825 0
+  ]
+  startingAngle [
+    0.098542
+  ]
+  endingAngle [
+    -0.343624
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -26.121431 -15.567405 0.01
+  name "Sri Rama Temple Street"
+  id "59358790_1"
+  startJunction "736207283"
+  endJunction "736207573"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    3.61655 -0.297998 0
+  ]
+  startingAngle [
+    0.082213
+  ]
+  endingAngle [
+    0.082213
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -157.248567 21.210797 0.01
+  name "12th A Main Road"
+  id "346768561_2"
+  startJunction "736207435"
+  endJunction "736207557"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    3.259247 -41.828714 0
+  ]
+  startingAngle [
+    1.493035
+  ]
+  endingAngle [
+    1.493035
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -30.448779 -11.253474 0.01
+  name "13th Main Road(1)"
+  id "128510751_4"
+  startJunction "736207283"
+  endJunction "736207618"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -3.524647 41.211642 0
+  ]
+  startingAngle [
+    -1.656114
+  ]
+  endingAngle [
+    -1.656114
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -145.847068 -73.646554 0.01
+  name "5th Cross Road(1)"
+  id "59358858_2"
+  startJunction "736207598"
+  endJunction "736207410"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    115.981544 8.645714 0
+  ]
+  startingAngle [
+    -0.074406
+  ]
+  endingAngle [
+    -0.074406
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -153.367996 -28.593753 0.01
+  name "12th A Main Road(1)"
+  id "346768561_4"
+  startJunction "736207557"
+  endJunction "736207598"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    3.221405 -41.362228 0
+  ]
+  startingAngle [
+    1.49307
+  ]
+  endingAngle [
+    1.49307
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -149.524633 -77.931768 0.01
+  name "12th A Main Road(2)"
+  id "346768561_5"
+  startJunction "736207598"
+  endJunction "736207402"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    2.490912 -31.902546 0
+  ]
+  startingAngle [
+    1.492876
+  ]
+  endingAngle [
+    1.492876
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -10.028273 -237.710128 0.01
+  name "13th Main Road(2)"
+  id "128510751_1"
+  endJunction "736014389"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -1.871061 9.654318 0
+    -4.377246 39.003209 0
+  ]
+  endingAngle [
+    -1.655983
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -18.739714 -194.942906 0.01
+  name "8th Cross Road"
+  id "59358863_1"
+  startJunction "736014389"
+  endJunction "736207363"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -117.146716 -6.496454 0
+  ]
+  startingAngle [
+    -3.196992
+  ]
+  endingAngle [
+    -3.196992
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -143.874136 -201.882712 0.01
+  name "8th Cross Road(1)"
+  id "59358863_2"
+  startJunction "736207363"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -43.791757 -2.432751 0
+    -51.735748 -2.873169 0
+  ]
+  startingAngle [
+    -3.197088
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 201.930979 -198.615769 0.01
+  name "10th Cross Road"
+  id "59358874_1"
+  endJunction "736207414"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -113.589268 20.767964 0
+  ]
+  endingAngle [
+    -2.960756
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 80.448975 -176.549996 0.01
+  name "10th Cross Road(1)"
+  id "59358874_2"
+  startJunction "736207414"
+  endJunction "736207608"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -49.04985 7.167933 0
+  ]
+  startingAngle [
+    -2.996484
+  ]
+  endingAngle [
+    -2.996484
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -146.411918 -117.810112 0.01
+  name "12th A Main Road(4)"
+  id "346768561_3"
+  startJunction "736207402"
+  endJunction "736207375"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    2.851599 -36.632354 0
+  ]
+  startingAngle [
+    1.493109
+  ]
+  endingAngle [
+    1.493109
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -142.939046 -162.418306 0.01
+  name "12th A Main Road(5)"
+  id "346768561_7"
+  startJunction "736207375"
+  endJunction "736207363"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    2.747916 -35.254633 0
+  ]
+  startingAngle [
+    1.493009
+  ]
+  endingAngle [
+    1.493009
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -15.086985 -190.735997 0.01
+  name "13th Main Road(3)"
+  id "128510751_5"
+  startJunction "736014389"
+  endJunction "736207605"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -3.132912 36.601458 0
+  ]
+  startingAngle [
+    -1.656183
+  ]
+  endingAngle [
+    -1.656183
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -18.901923 -146.163664 0.01
+  name "13th Main Road(4)"
+  id "128510751_6"
+  startJunction "736207605"
+  endJunction "736207625"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -3.234597 37.816367 0
+  ]
+  startingAngle [
+    -1.656123
+  ]
+  endingAngle [
+    -1.656123
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -14.678036 -17.312662 0.01
+  name "Sri Rama Temple Street(1)"
+  id "59358790_3"
+  startJunction "736207573"
+  endJunction "1857029051"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    10.818344 -3.15162 0
+  ]
+  startingAngle [
+    0.283476
+  ]
+  endingAngle [
+    0.283476
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 3.780512 -22.832523 0.01
+  name "Sri Rama Temple Street(2)"
+  id "59358790_4"
+  startJunction "1857029051"
+  endJunction "736207387"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    22.459076 -7.384964 0
+  ]
+  startingAngle [
+    0.317682
+  ]
+  endingAngle [
+    0.317682
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -18.494978 -103.987395 0.01
+  name "8th Cross Road(2)"
+  id "331223021_1"
+  startJunction "736207625"
+  endJunction "1485671138"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    2.154711 0.2026 0
+  ]
+  startingAngle [
+    -0.093751
+  ]
+  endingAngle [
+    -0.093751
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -8.359881 -103.282338 0.01
+  name "8th Cross Road(3)"
+  id "331223021_3"
+  startJunction "1485671138"
+  endJunction "736207580"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    26.565525 0.850556 0
+  ]
+  startingAngle [
+    -0.032006
+  ]
+  endingAngle [
+    -0.032006
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 33.874363 -32.604197 0.01
+  name "Sri Rama Temple Street(3)"
+  id "59358790_2"
+  startJunction "736207387"
+  endJunction "1857029047"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    24.877353 -7.37739 0
+  ]
+  startingAngle [
+    0.288289
+  ]
+  endingAngle [
+    0.288289
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 66.394078 -42.344985 0.01
+  name "Sri Rama Temple Street(4)"
+  id "59358790_5"
+  startJunction "1857029047"
+  endJunction "736207439"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    20.462248 -6.589672 0
+    38.075896 -15.554516 0
+  ]
+  startingAngle [
+    0.311553
+  ]
+  endingAngle [
+    0.470799
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 26.202289 -102.201544 0.01
+  name "8th Cross Road(4)"
+  id "331223021_2"
+  startJunction "736207580"
+  endJunction "1857029049"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    18.38748 0.470106 0
+  ]
+  startingAngle [
+    -0.025561
+  ]
+  endingAngle [
+    -0.025561
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -39.982593 100.16105 0.01
+  name "13th Main Road(5)"
+  id "128510751_7"
+  startJunction "3198701808"
+  endJunction "736207514"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -2.716505 31.698441 0
+  ]
+  startingAngle [
+    -1.656286
+  ]
+  endingAngle [
+    -1.656286
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -165.199176 123.087098 0.01
+  name "12th A Main Road(6)"
+  id "346768561_1"
+  startJunction "736207542"
+  endJunction "3532729011"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    3.512273 -44.985592 0
+  ]
+  startingAngle [
+    1.492879
+  ]
+  endingAngle [
+    1.492879
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -161.064421 70.125761 0.01
+  name "12th A Main Road(7)"
+  id "346768561_8"
+  startJunction "3532729011"
+  endJunction "736207435"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    3.193994 -40.93917 0
+  ]
+  startingAngle [
+    1.492936
+  ]
+  endingAngle [
+    1.492936
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -34.655359 37.92905 0.01
+  name "13th Main Road(6)"
+  id "128510751_2"
+  startJunction "736207618"
+  endJunction "736207248"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -3.37282 39.410971 0
+  ]
+  startingAngle [
+    -1.656169
+  ]
+  endingAngle [
+    -1.656169
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -38.710572 85.310864 0.01
+  name "13th Main Road(7)"
+  id "128510751_8"
+  startJunction "736207248"
+  endJunction "3198701808"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -0.589162 6.879382 0
+  ]
+  startingAngle [
+    -1.65623
+  ]
+  endingAngle [
+    -1.65623
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 51.042434 111.673548 0.01
+  name "road(6)"
+  id "1185473492_1"
+  endJunction "9189514623"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    4.503565 17.720604 0
+  ]
+  endingAngle [
+    -1.321922
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 57.518447 137.147181 0.01
+  name "road(7)"
+  id "1185473492_2"
+  startJunction "9189514623"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    6.395633 25.112715 0
+  ]
+  startingAngle [
+    -1.321421
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 15.710859 87.619688 0.01
+  name "2nd Cross Road(2)"
+  id "59358857_3"
+  startJunction "736207443"
+  endJunction "10181939131"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    33.949929 -6.091014 0
+  ]
+  startingAngle [
+    0.177523
+  ]
+  endingAngle [
+    0.177523
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 57.535172 80.116558 0.01
+  name "2nd Cross Road(3)"
+  id "59358857_4"
+  startJunction "10181939131"
+  endJunction "736207628"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    11.080007 -1.986079 0
+  ]
+  startingAngle [
+    0.177365
+  ]
+  endingAngle [
+    0.177365
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -47.030423 135.55918 0.01
+  name "1st Cross Road(1)"
+  id "1201026024_1"
+  startJunction "736207514"
+  endJunction "736207542"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -114.490323 -8.198514 0
+  ]
+  startingAngle [
+    -3.213079
+  ]
+  endingAngle [
+    -3.213079
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -169.500346 126.789704 0.01
+  name "1st Cross Road(2)"
+  id "1201026024_2"
+  startJunction "736207542"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -48.035888 -3.434394 0
+    -52.593492 -3.763855 0
+  ]
+  startingAngle [
+    -3.212968
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  splineSubdivision 0
+}
+PedestrianCrossing {
+  translation -217.536234 123.35531 -0.07
+  rotation 0 0 1 1.642959
+  name "pedestrian crossing(5)"
+  size 4 1.6
+}
+Road {
+  translation 76.474689 76.639962 0.01
+  name "2nd Cross Road(4)"
+  id "59358857_2"
+  startJunction "736207628"
+  endJunction "736207483"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    3.765454 -0.753395 0
+    22.21823 -4.439466 0
+  ]
+  startingAngle [
+    0.197473
+  ]
+  endingAngle [
+    0.197162
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -22.819006 -100.376462 0.01
+  name "13th Main Road(8)"
+  id "128510751_3"
+  startJunction "736207625"
+  endJunction "736207410"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -2.715992 31.687585 0
+  ]
+  startingAngle [
+    -1.656299
+  ]
+  endingAngle [
+    -1.656299
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation -26.217517 -60.718045 0.01
+  name "13th Main Road(9)"
+  id "128510751_9"
+  startJunction "736207410"
+  endJunction "736207283"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -3.549479 41.493675 0
+  ]
+  startingAngle [
+    -1.656131
+  ]
+  endingAngle [
+    -1.656131
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 104.169468 67.731172 0.01
+  name "2nd Cross Road(5)"
+  id "59358857_5"
+  startJunction "736207483"
+  endJunction "736207439"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    11.46316 -27.187567 0
+    12.758473 -29.334739 0
+    18.910011 -52.527123 0
+    13.313002 -87.219336 0
+    11.936001 -98.5793 0
+    4.942396 -123.592804 0
+  ]
+  startingAngle [
+    1.171781
+  ]
+  endingAngle [
+    -4.439758
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 106.00857 -63.162721 0.01
+  name "2nd Cross Road(6)"
+  id "59358857_6"
+  startJunction "736207439"
+  endJunction "1420066737"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    -21.926374 -37.3207 0
+  ]
+  startingAngle [
+    -4.181202
+  ]
+  endingAngle [
+    -4.181202
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 52.579025 -101.903813 0.01
+  name "8th Cross Road(6)"
+  id "331223021_4"
+  startJunction "1857029049"
+  endJunction "1420066737"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    25.48638 -1.753827 0
+  ]
+  startingAngle [
+    0.068706
+  ]
+  endingAngle [
+    0.068706
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+Road {
+  translation 85.991676 -104.646533 0.01
+  name "8th Cross Road(7)"
+  id "331223021_6"
+  startJunction "1420066737"
+  endJunction "736207261"
+  width 4
+  numberOfLanes 1
+  speedLimit 13.888889
+  lines []
+  wayPoints [
+    0 0 0
+    7.523196 -1.365373 0
+  ]
+  startingAngle [
+    0.179534
+  ]
+  endingAngle [
+    0.179534
+  ]
+  startLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+  ]
+  endLine [
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_triangle.png"
+    "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/road/protos/textures/road_line_dashed.png"
+  ]
+  splineSubdivision 0
+}
+SimpleBuilding {
+  translation 76.89 46.53 0
+  name "Muthyalamma Temple"
+  corners [
+    0 0
+    -7.32 0.23
+    -7.81 -15.79
+    -0.49 -16.02
+  ]
+  wallType "stone wall"
+}
+SimpleBuilding {
+  translation -33.67 83.13 0
+  name "building(1)"
+  floorNumber 4
+  corners [
+    0 0
+    -0.46 8.39
+    15.33 9.27
+    15.79 0.87
+  ]
+  wallType "glass highrise"
+}
+SimpleBuilding {
+  translation -139.3 -105.59 0
+  name "building(3)"
+  corners [
+    0 0
+    -0.9 13.83
+    8.89 14.47
+    9.79 0.64
+  ]
+  wallType "old brick building"
+}
+SimpleBuilding {
+  translation 118.24 -200.78 0
+  name "building(6)"
+  corners [
+    0 0
+    2.21 11.17
+    10.98 9.42
+    8.77 -1.77
+  ]
+  wallType "stone wall"
+}
+SimpleBuilding {
+  translation -164.95 -195.51 0
+  name "building(8)"
+  corners [
+    0 0
+    -0.29 8.06
+    16.35 8.67
+    16.65 0.62
+  ]
+  wallType "old building"
+}
+SimpleBuilding {
+  translation 144.2 -205.49 0
+  name "building(9)"
+  corners [
+    0 0
+    -7.47 1.5
+    -5.2 12.92
+    2.25 11.42
+  ]
+  wallType "stone brick"
+}
+SimpleBuilding {
+  translation 108.81 -199.53 0
+  name "building(11)"
+  corners [
+    0 0
+    2.46 12.49
+    11.05 10.77
+    8.58 -1.71
+  ]
+  wallType "transparent highrise"
+}
+SimpleBuilding {
+  translation -139 -134.6 0
+  name "building(12)"
+  corners [
+    0 0
+    -1.17 18.05
+    11.05 18.86
+    12.22 0.8
+  ]
+  wallType "highrise"
+}
+SimpleBuilding {
+  translation 122.41 -94.09 0
+  name "building(14)"
+  corners [
+    0 0
+    -17.33 12.96
+    0.41 36.96
+    17.74 24
+  ]
+  wallType "red and white building"
+}
+SimpleBuilding {
+  translation 155.59 -184.72 0
+  name "Beme"
+  corners [
+    0 0
+    -8.39 1.69
+    -5.91 14.07
+    2.47 12.38
+  ]
+  wallType "old office building"
+}
+SimpleBuilding {
+  translation 66.2985 -58.6748 0
+  rotation 0 0 1 -1.3089953071795861
+  name "building(17)"
+  corners [
+    0 0
+    8.78 17.05
+    42.55 -0.55
+    33.77 -17.6
+  ]
+  wallType "old brick building"
+}
+SimpleBuilding {
+  translation 3.31086 -57.0109 0
+  rotation 0 0 1 -1.3089953071795861
+  name "building a"
+  corners [
+    0 0
+    8.78 17.05
+    42.55 -0.55
+    33.77 -17.6
+  ]
+  wallType "old brick building"
+}
+SimpleBuilding {
+  translation -8.68932 -160.684 0
+  rotation 0 0 1 -1.047195307179586
+  name "building a(1)"
+  corners [
+    0 0
+    8.78 17.05
+    42.55 -0.55
+    33.77 -17.6
+  ]
+  wallType "orange building"
+  roofHeight 2
+}
+SimpleBuilding {
+  translation -141.42 -90.58 0
+  name "building(18)"
+  corners [
+    0 0
+    -0.69 10.63
+    10.27 11.35
+    10.96 0.72
+  ]
+  wallType "brick building"
+}
+SimpleBuilding {
+  translation 162.96 -208.58 0
+  name "building(22)"
+  corners [
+    0 0
+    -8.67 1.73
+    -6.44 12.97
+    2.22 11.23
+  ]
+  wallType "red and white building"
+}
+SimpleBuilding {
+  translation 130.547 14.4033 0
+  rotation 0 0 1 0.261799
+  name "building(23)"
+  corners [
+    0 0
+    15.95 22.58
+    33.67 9.9
+    25.23 -2.04
+    31.06 -6.21
+    24.94 -14.87
+    19.12 -10.69
+    17.71 -12.68
+  ]
+  wallType "gray glass building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation -11.6882 -142.407 0
+  rotation 0 0 1 0.785398
+  name "building b"
+  corners [
+    0 0
+    15.95 22.58
+    33.67 9.9
+    25.23 -2.04
+    31.06 -6.21
+    24.94 -14.87
+    19.12 -10.69
+    17.71 -12.68
+  ]
+  wallType "gray glass building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation -94.25 107.48 0
+  name "building(24)"
+  corners [
+    0 0
+    4.84 0.39
+    4.98 -1.26
+    9.86 -0.86
+    9.72 0.78
+    15.33 1.24
+    16.17 -9.14
+    0.84 -10.38
+  ]
+  wallType "concrete building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation -120.58 140.42 0
+  name "building(26)"
+  floorNumber 5
+  corners [
+    0 0
+    -15.65 -0.97
+    -17.09 22.51
+    -1.44 23.48
+  ]
+  wallType "tall house"
+}
+SimpleBuilding {
+  translation -54.53 164.23 0
+  name "CRED terra"
+  floorNumber 4
+  corners [
+    0 0
+    -14.16 -1
+    -15.54 18.52
+    -1.38 19.53
+  ]
+  wallType "brick building"
+}
+SimpleBuilding {
+  translation -100.59 141.63 0
+  name "building(31)"
+  corners [
+    0 0
+    -15.32 -0.88
+    -16.41 18.06
+    -1.08 18.95
+  ]
+  wallType "glass highrise"
+}
+SimpleBuilding {
+  translation -62.96 139.48 0
+  name "building(32)"
+  corners [
+    0 0
+    -15.53 -0.82
+    -16.74 22.41
+    -1.2 23.23
+  ]
+  wallType "construction building"
+}
+SimpleBuilding {
+  translation -132.91 -64.33 0
+  name "building(34)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -9.04 -0.39
+    -9.68 14.49
+    -0.65 14.89
+  ]
+  wallType "factory building"
+}
+SimpleBuilding {
+  translation -59.04 -41.17 0
+  name "building(35)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -0.98 14.85
+    7.46 15.42
+    8.44 0.55
+  ]
+  wallType "transparent highrise"
+}
+SimpleBuilding {
+  translation -132.07 -44.79 0
+  name "building(38)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -1.11 16.78
+    7.67 17.37
+    8.78 0.58
+  ]
+  wallType "old house"
+}
+SimpleBuilding {
+  translation -152.43 35.91 0
+  name "building(39)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -0.87 13.06
+    8.55 13.69
+    9.4 0.63
+  ]
+  wallType "highrise"
+}
+SimpleBuilding {
+  translation -146.05 -14.18 0
+  name "building(41)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -0.82 16.57
+    8.38 17.03
+    9.22 0.46
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation -103.14 38.37 0
+  name "building(43)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -1.08 16.37
+    8.51 17.01
+    9.6 0.64
+  ]
+  wallType "glass building"
+}
+SimpleBuilding {
+  translation -118.53 57 0
+  name "building(44)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -0.64 9.66
+    10.27 10.39
+    10.91 0.72
+  ]
+  wallType "orange building"
+}
+SimpleBuilding {
+  translation -108.09 -42.03 0
+  name "building(45)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -0.97 14.72
+    7.81 15.31
+    8.78 0.59
+  ]
+  wallType "concrete building"
+}
+SimpleBuilding {
+  translation -106.07 57.61 0
+  name "building(47)"
+  corners [
+    0 0
+    -1.06 16.06
+    7.07 16.6
+    8.13 0.55
+  ]
+  wallType "office building"
+}
+SimpleBuilding {
+  translation -121.58 89.29 0
+  name "building(49)"
+  corners [
+    0 0
+    -0.97 14.54
+    9.05 15.22
+    10.01 0.67
+  ]
+  wallType "factory building"
+}
+SimpleBuilding {
+  translation -82.66 57.45 0
+  name "building(55)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    12.61 0.85
+    13.87 -18.16
+    1.26 -19
+  ]
+  wallType "concrete building"
+}
+SimpleBuilding {
+  translation -97.72 -11.92 0
+  name "building(56)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -1.6 16.83
+    9.21 17.88
+    10.82 1.05
+  ]
+  wallType "construction building"
+}
+SimpleBuilding {
+  translation 30.32 126.66 0
+  name "building(60)"
+  corners [
+    0 0
+    1.06 9.55
+    18.3 7.62
+    17.23 -1.94
+  ]
+  wallType "residential building"
+}
+SimpleBuilding {
+  translation -92.27 38.72 0
+  name "building(61)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -1.11 16.78
+    8.34 17.43
+    9.46 0.64
+  ]
+}
+SimpleBuilding {
+  translation -120.2 -14.12 0
+  name "building(64)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -1.06 16.25
+    7.72 16.84
+    8.79 0.59
+  ]
+  wallType "brick building"
+}
+SimpleBuilding {
+  translation -124.69 11.51 0
+  name "building(66)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -0.48 9.73
+    7.97 10.15
+    8.43 0.42
+  ]
+  wallType "orange building"
+}
+SimpleBuilding {
+  translation -149.96 3.2 0
+  name "building(67)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -0.57 13.58
+    12.02 14.12
+    12.6 0.53
+  ]
+  wallType "orange building"
+}
+SimpleBuilding {
+  translation -160.21 104.81 0
+  name "building(69)"
+  corners [
+    0 0
+    -1.08 16.34
+    9.61 17.06
+    10.69 0.72
+  ]
+  wallType "highrise"
+}
+SimpleBuilding {
+  translation -74.55 8.49 0
+  name "building(73)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -1 15.06
+    9 15.73
+    10 0.67
+  ]
+  wallType "brick building"
+}
+SimpleBuilding {
+  translation -144.98 85.04 0
+  name "building(74)"
+  corners [
+    0 0
+    -1.19 18.01
+    8.23 18.64
+    9.41 0.63
+  ]
+  wallType "red and white building"
+}
+SimpleBuilding {
+  translation -155.27 53.14 0
+  name "building(77)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -0.7 10.47
+    10.18 11.2
+    10.87 0.72
+  ]
+  wallType "brick building"
+}
+SimpleBuilding {
+  translation -123.36 107.25 0
+  name "building(80)"
+  corners [
+    0 0
+    -1.14 17.27
+    9.15 17.97
+    10.29 0.69
+  ]
+  wallType "transparent highrise"
+}
+SimpleBuilding {
+  translation -100.03 7.13 0
+  name "building(83)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -0.88 16.54
+    10.44 17.14
+    11.33 0.62
+  ]
+  wallType "residential building"
+}
+SimpleBuilding {
+  translation -159.55 84.66 0
+  name "building(84)"
+  corners [
+    0 0
+    -1.12 16.97
+    10.51 17.74
+    11.64 0.77
+  ]
+  wallType "red and white building"
+}
+SimpleBuilding {
+  translation -131.49 56.38 0
+  name "building(85)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -0.98 14.92
+    9.98 15.65
+    10.96 0.73
+  ]
+  wallType "old house"
+}
+SimpleBuilding {
+  translation -57.36 58.56 0
+  name "building(87)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    11.22 0.76
+    12.23 -14.37
+    1 -15.11
+  ]
+  wallType "old office building"
+}
+SimpleBuilding {
+  translation -33.95 115.26 0
+  name "building(88)"
+  corners [
+    0 0
+    -0.44 17.25
+    11.25 17.55
+    11.69 0.97
+  ]
+  wallType "stone wall"
+}
+SimpleBuilding {
+  translation -56.66 75.98 0
+  name "building(93)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    9.34 0.63
+    10.38 -15.2
+    1.05 -15.82
+  ]
+  wallType "arcade-style building"
+}
+SimpleBuilding {
+  translation -48.62 -6.2 0
+  name "building(96)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -0.72 16
+    10.22 16.49
+    10.94 0.49
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation -67.97 57.88 0
+  name "building(97)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    9.35 0.63
+    10.46 -16.25
+    1.12 -16.87
+  ]
+  wallType "old office building"
+}
+SimpleBuilding {
+  translation -72.93 -8.18 0
+  name "building(102)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -1.1 13.91
+    8.76 14.69
+    9.86 0.79
+  ]
+  wallType "orange building"
+}
+SimpleBuilding {
+  translation -83.45 -42.33 0
+  name "building(103)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -1.04 16.06
+    9.62 16.77
+    10.68 0.7
+  ]
+  wallType "blue glass building"
+}
+SimpleBuilding {
+  translation -29.19 14.49 0
+  name "building(105)"
+  corners [
+    0 0
+    1.15 5.93
+    10.88 4.02
+    9.74 -1.91
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation -50.17 12.71 0
+  name "building(106)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -1 15.05
+    9.09 15.73
+    10.08 0.67
+  ]
+  wallType "orange building"
+}
+SimpleBuilding {
+  translation -132.71 86.66 0
+  name "building(107)"
+  corners [
+    0 0
+    -0.96 14.55
+    8.94 15.22
+    9.91 0.67
+  ]
+  wallType "office building"
+}
+SimpleBuilding {
+  translation -45.86 -39.55 0
+  name "building(108)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -0.96 14.43
+    10.99 15.23
+    11.95 0.8
+  ]
+  wallType "brick building"
+}
+SimpleBuilding {
+  translation -28.64 23.32 0
+  name "building(109)"
+  corners [
+    0 0
+    4.07 11.39
+    13.71 7.89
+    9.65 -3.49
+  ]
+  wallType "tall house"
+}
+SimpleBuilding {
+  translation -143.4 55.77 0
+  name "building(110)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -1 15.12
+    7.73 15.71
+    8.73 0.58
+  ]
+  wallType "stone wall"
+}
+SimpleBuilding {
+  translation 95.5 53.69 0
+  name "building(111)"
+  corners [
+    0 0, 1.44 0.03, 1.45 -1.06, 2.51 -1.04, 2.51 -0.66, 4.63 -0.61, 4.62 0.02, 8.78 0.09, 8.87 -4.98, 7.39 -5, 7.47 -9.78, 8.16 -9.76, 8.39 -21.9, 0.39 -22.04, 0.37 -21.04, -0.82 -21.06, -0.83 -19.99, -0.52 -19.98, -0.55 -18.67, -1.32 -18.68, -1.34 -17.31, 0.31 -17.28, 0.24 -13.11, -0.97 -13.13, -1 -11.77, -2.17 -11.79, -2.22 -9.27, 0.16 -9.23
+  ]
+  wallType "office building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation 137.14 175.6 0
+  name "Tristar Apartments"
+  corners [
+    0 0
+    8.24 27.89
+    18.03 24.95
+    17.71 23.88
+    21.2 22.83
+    18.56 13.94
+    19.71 13.59
+    17.31 5.48
+    16.16 5.81
+    13.27 -3.98
+  ]
+  wallType "highrise"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation 106.87 136.6 0
+  name "building(113)"
+  corners [
+    0 0
+    3.27 8.57
+    10.6 5.73
+    7.32 -2.83
+  ]
+  wallType "highrise"
+}
+SimpleBuilding {
+  translation 123.15 -16.11 0
+  name "building(114)"
+  corners [
+    0 0
+    6.58 18.51
+    31.03 9.72
+    24.45 -8.79
+  ]
+}
+SimpleBuilding {
+  translation 132.16 124.78 0
+  name "building(115)"
+  corners [
+    0 0
+    3.05 9.17
+    12.95 5.86
+    9.9 -3.33
+  ]
+  wallType "transparent highrise"
+}
+SimpleBuilding {
+  translation -60.79 140.38 0
+  name "building(116)"
+  corners [
+    0 0
+    -1.96 21.64
+    9.12 22.66
+    11.08 1.02
+  ]
+  wallType "tall house"
+}
+SimpleBuilding {
+  translation 112.6 76.63 0
+  name "building(117)"
+  corners [
+    0 0
+    3.32 13.07
+    10.59 11.19
+    7.26 -1.88
+  ]
+  wallType "residential building"
+}
+SimpleBuilding {
+  translation 123.21 47.4 0
+  name "building(118)"
+  corners [
+    0 0
+    8.26 19.36
+    19.44 14.53
+    11.19 -4.84
+  ]
+  wallType "residential building"
+}
+SimpleBuilding {
+  translation 36.39 -4.48 0
+  name "building(119)"
+  corners [
+    0 0, -1.75 -0.08, -1.66 -1.82, -4.28 -1.94, -4.36 -0.21, -8 -0.38, -7.92 -2.13, -10.36 -2.25, -10.45 -0.49, -13.67 -0.64, -14.01 6.53, -14.72 6.5, -15.04 13.29, -14.32 13.31, -14.4 15.13, -13.26 15.18, -13.39 17.83, -10.43 17.97, -10.38 16.94, -7.54 17.07, -7.47 15.45, -4.38 15.6, -4.46 17.18, -1.03 17.35, -0.95 15.75, 0.33 15.81, 0.41 14.35, -0.67 14.29, -0.44 9.4, 1.15 9.47, 1.14 9.7, 2.01 9.74, 2.09 8.12, -0.37 8.01, -0.33 7.05, 1.31 7.14, 1.34 6.29, -0.29 6.22, -0.18 3.95, 1.83 4.05, 1.96 1.18, -0.06 1.09
+  ]
+  wallType "old brick building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation -13.6893 47.9438 0
+  rotation 0 0 1 0.261799
+  name "building c"
+  corners [
+    0 0, -1.75 -0.08, -1.66 -1.82, -4.28 -1.94, -4.36 -0.21, -8 -0.38, -7.92 -2.13, -10.36 -2.25, -10.45 -0.49, -13.67 -0.64, -14.01 6.53, -14.72 6.5, -15.04 13.29, -14.32 13.31, -14.4 15.13, -13.26 15.18, -13.39 17.83, -10.43 17.97, -10.38 16.94, -7.54 17.07, -7.47 15.45, -4.38 15.6, -4.46 17.18, -1.03 17.35, -0.95 15.75, 0.33 15.81, 0.41 14.35, -0.67 14.29, -0.44 9.4, 1.15 9.47, 1.14 9.7, 2.01 9.74, 2.09 8.12, -0.37 8.01, -0.33 7.05, 1.31 7.14, 1.34 6.29, -0.29 6.22, -0.18 3.95, 1.83 4.05, 1.96 1.18, -0.06 1.09
+  ]
+  wallType "old brick building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation -154.39 135.84 0
+  name "building(120)"
+  corners [
+    0 0
+    -1.61 17.82
+    12.31 19.09
+    13.92 1.28
+  ]
+  wallType "old house"
+}
+SimpleBuilding {
+  translation -170.09 136.13 0
+  name "building(123)"
+  corners [
+    0 0
+    -1.62 17.86
+    12.13 19.13
+    13.75 1.26
+  ]
+  wallType "factory building"
+}
+SimpleBuilding {
+  translation 113.14 158.2 0
+  name "building(125)"
+  corners [
+    0 0
+    3.94 14.96
+    13.32 12.45
+    9.37 -2.51
+  ]
+  wallType "stone brick"
+}
+SimpleBuilding {
+  translation 2.06 10.34 0
+  name "building(127)"
+  corners [
+    0 0
+    0 4.28
+    -0.7 4.28
+    -0.7 5.73
+    -1.32 5.73
+    -1.33 9.86
+    -0.7 9.86
+    -0.71 10.95
+    -0.01 10.94
+    -0.02 12.15
+    13.13 12.18
+    13.14 3.11
+    14.43 3.11
+    14.44 0.03
+    12.25 0.02
+    12.27 -3.17
+    8.86 -3.18
+    8.86 0.02
+    4.17 0.01
+    4.17 -0.68
+    1.1 -0.69
+    1.1 0
+  ]
+  wallType "construction building"
+  roofShape "gabled roof"
+}
+SimpleBuilding {
+  translation 27.1 25.34 0
+  name "building(128)"
+  corners [
+    0 0, -1.85 -0.02, -1.88 1.65, -3.27 1.63, -3.34 6.34, -4.53 6.32, -4.46 1.6, -10.61 1.52, -10.7 7.89, -7.57 7.93, -7.58 8.56, -4.69 8.6, -4.69 7.99, -4.31 7.99, -4.31 7.61, -3.22 7.63, -3.23 8, 0.64 8.06, 2.15 8.09, 2.06 13.9, 16.5 14.11, 16.52 12.81, 18.13 12.83, 18.24 6.2, 16.7 6.18, 16.85 -3.66, 2.41 -3.88, 2.34 0.62, -0.01 0.59
+  ]
+  wallType "old office building"
+  roofShape "gabled roof"
+}
+SimpleBuilding {
+  translation -27.59 11.1 0
+  name "building(129)"
+  corners [
+    0 0
+    2.16 -19.13
+    3.61 -19.98
+    5.92 -19.6
+    10.73 -2.58
+  ]
+  wallType "gray glass building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation -61.43 -45.53 0
+  name "building(131)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    0.87 -13.02
+    -8.11 -13.62
+    -8.97 -0.59
+  ]
+  wallType "residential building"
+}
+SimpleBuilding {
+  translation -108.59 -61.01 0
+  name "building(132)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    -10.47 -0.69
+    -11.42 13.87
+    -0.96 14.56
+  ]
+  wallType "factory building"
+}
+SimpleBuilding {
+  translation -34.7 -42.62 0
+  name "building(134)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    1 -15.16
+    -8.81 -15.82
+    -9.81 -0.66
+  ]
+  wallType "transparent highrise"
+}
+SimpleBuilding {
+  translation -84.41 -47.8 0
+  name "building(136)"
+  floorHeight 3.2
+  floorNumber 6
+  corners [
+    0 0
+    0.81 -12.29
+    -8.4 -12.91
+    -9.22 -0.62
+  ]
+  wallType "glass building"
+}
+SimpleBuilding {
+  translation -134.14 -175.41 0
+  name "building(137)"
+  corners [
+    0 0
+    -0.48 11.47
+    8.5 11.87
+    8.98 0.41
+  ]
+  wallType "concrete building"
+}
+SimpleBuilding {
+  translation -85 -176.01 0
+  name "building(138)"
+  corners [
+    0 0
+    -0.77 15.57
+    9.52 16.08
+    10.29 0.52
+  ]
+  wallType "old brick building"
+}
+SimpleBuilding {
+  translation -108.56 -192.97 0
+  name "building(139)"
+  corners [
+    0 0
+    -0.6 14.23
+    10.55 14.71
+    11.17 0.48
+  ]
+  wallType "gray glass building"
+}
+SimpleBuilding {
+  translation -164.31 -161.47 0
+  name "building(140)"
+  floorNumber 2
+  corners [
+    0 0
+    -0.45 12.06
+    12.19 12.51
+    12.63 0.46
+  ]
+  wallType "office building"
+}
+SimpleBuilding {
+  translation -122.59 -177.76 0
+  name "building(141)"
+  corners [
+    0 0
+    -0.76 15.2
+    10.56 15.77
+    11.31 0.56
+  ]
+}
+SimpleBuilding {
+  translation -72.33 -192.27 0
+  name "building(143)"
+  corners [
+    0 0
+    -0.7 16.59
+    10.5 17.08
+    11.2 0.48
+  ]
+  wallType "arcade-style building"
+}
+SimpleBuilding {
+  translation -163.81 -185.68 0
+  name "building(144)"
+  floorNumber 4
+  corners [
+    0 0
+    -0.56 9.64
+    14.25 10.5
+    14.81 0.87
+  ]
+  wallType "construction building"
+}
+SimpleBuilding {
+  translation -96.63 -192.26 0
+  name "building(145)"
+  corners [
+    0 0
+    -0.61 14.16
+    10.19 14.63
+    10.79 0.47
+  ]
+  wallType "glass highrise"
+}
+SimpleBuilding {
+  translation -166.21 -147.29 0
+  name "building(146)"
+  floorNumber 4
+  corners [
+    0 0
+    -0.36 7.74
+    -2.2 7.64
+    -2.4 11.91
+    12.51 12.61
+    13.08 0.62
+  ]
+  wallType "classic building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation -35.46 -172.06 0
+  name "building(147)"
+  corners [
+    0 0
+    -0.67 15.9
+    10.49 16.38
+    11.17 0.48
+  ]
+  wallType "gray glass building"
+}
+SimpleBuilding {
+  translation -164.05 -172.29 0
+  name "building(150)"
+  floorNumber 4
+  corners [
+    0 0
+    -0.39 9.19
+    11.92 9.73
+    12.32 0.54
+  ]
+}
+SimpleBuilding {
+  translation -61.7 -173.76 0
+  name "building(153)"
+  corners [
+    0 0
+    -0.8 16.08
+    11.01 16.67
+    11.8 0.58
+  ]
+  wallType "brick building"
+}
+SimpleBuilding {
+  translation -48.29 -190.7 0
+  name "building(155)"
+  corners [
+    0 0
+    -0.7 16.3
+    11.68 16.83
+    12.38 0.54
+  ]
+  wallType "tall house"
+}
+SimpleBuilding {
+  translation -124.21 -149.04 0
+  name "building(156)"
+  corners [
+    0 0
+    -0.66 15.3
+    9.67 15.76
+    10.34 0.44
+  ]
+  wallType "orange building"
+}
+SimpleBuilding {
+  translation -64.72 -127.13 0
+  name "building(158)"
+  corners [
+    0 0
+    -0.94 14.48
+    10.08 15.21
+    11.02 0.72
+  ]
+  wallType "gray glass building"
+}
+SimpleBuilding {
+  translation -88.73 -130.44 0
+  name "building(160)"
+  corners [
+    0 0
+    -1.04 15.87
+    9.34 16.56
+    10.37 0.68
+  ]
+  wallType "transparent highrise"
+}
+SimpleBuilding {
+  translation -67.36 -99.17 0
+  name "building(162)"
+  corners [
+    0 0
+    -0.79 12.2
+    10.94 12.97
+    11.73 0.77
+  ]
+  wallType "residential building"
+}
+SimpleBuilding {
+  translation -54.56 -98.2 0
+  name "building(164)"
+  corners [
+    0 0
+    -0.83 12.69
+    11.17 13.48
+    12 0.79
+  ]
+  wallType "stone wall"
+}
+SimpleBuilding {
+  translation -83.79 -74.35 0
+  name "building(168)"
+  corners [
+    0 0
+    0.76 -11.57
+    -8.84 -12.21
+    -9.59 -0.63
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation -99.65 -148.48 0
+  name "building(170)"
+  corners [
+    0 0
+    -0.67 15.31
+    9.81 15.77
+    10.48 0.46
+  ]
+  wallType "glass building"
+}
+SimpleBuilding {
+  translation -104.72 -88.53 0
+  name "building(173)"
+  corners [
+    0 0
+    -0.84 12.93
+    10.09 13.64
+    10.93 0.72
+  ]
+  wallType "office building"
+}
+SimpleBuilding {
+  translation -113.5 -131.02 0
+  name "building(174)"
+  corners [
+    0 0
+    -1.03 15.83
+    10.14 16.56
+    11.16 0.73
+  ]
+  wallType "gray glass building"
+}
+SimpleBuilding {
+  translation -92.35 -102.55 0
+  name "building(175)"
+  corners [
+    0 0
+    -0.84 13.05
+    9.05 13.71
+    9.89 0.65
+  ]
+  wallType "old building"
+}
+SimpleBuilding {
+  translation -77.7 -99.97 0
+  name "building(177)"
+  corners [
+    0 0
+    -0.8 12.41
+    8.99 13.06
+    9.79 0.63
+  ]
+  wallType "concrete building"
+}
+SimpleBuilding {
+  translation -76.85 -143.05 0
+  name "building(178)"
+  corners [
+    0 0
+    -0.54 12.75
+    10.9 13.25
+    11.45 0.5
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation -129.87 -90.13 0
+  name "building(180)"
+  corners [
+    0 0
+    -0.74 11.27
+    9.28 11.93
+    10.01 0.66
+  ]
+  wallType "glass building"
+}
+SimpleBuilding {
+  translation -117.11 -89.75 0
+  name "building(182)"
+  corners [
+    0 0
+    -0.9 13.76
+    10.84 14.53
+    11.74 0.77
+  ]
+  wallType "glass highrise"
+}
+SimpleBuilding {
+  translation -52.08 -143.02 0
+  name "building(183)"
+  corners [
+    0 0
+    -0.64 15.03
+    10.22 15.5
+    10.88 0.47
+  ]
+  wallType "old office building"
+}
+SimpleBuilding {
+  translation -92.48 140.97 0
+  name "building(187)"
+  corners [
+    0 0
+    -1.49 16.29
+    11.42 17.48
+    12.91 1.18
+  ]
+}
+SimpleBuilding {
+  translation -40.56 -126 0
+  name "building(223)"
+  corners [
+    0 0
+    -1.05 16.23
+    9.05 16.9
+    10.1 0.66
+  ]
+  wallType "arcade-style building"
+}
+SimpleBuilding {
+  translation 122.06 130.05 0
+  name "building(230)"
+  corners [
+    0 0
+    10.05 -3.11
+    20.7 31.8
+    10.66 34.91
+  ]
+  wallType "red and white building"
+}
+SimpleBuilding {
+  translation 21.64 65.76 0
+  name "building(233)"
+  corners [
+    0 0
+    8.54 -1.86
+    10.93 -0.21
+    13.64 2.41
+    16.07 15.69
+    1.27 17.63
+  ]
+  wallType "stone wall"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation -11.7461 -75.2185 0
+  rotation 0 0 1 2.0944
+  name "building(234)"
+  corners [
+    0 0
+    5.93 9.19
+    25.03 -3.29
+    24.24 -5.08
+    39.78 -14.95
+    40.4 -13.16
+    52.19 -19.51
+    47.93 -26.99
+    25.79 -14.12
+    25 -15.27
+  ]
+  wallType "tall house"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation -21.459 101.247 0
+  rotation 0 0 -1 -0.5236053071795865
+  name "building(2)"
+  corners [
+    0 0
+    5.93 9.19
+    25.03 -3.29
+    24.24 -5.08
+    39.78 -14.95
+    40.4 -13.16
+    52.19 -19.51
+    47.93 -26.99
+    25.79 -14.12
+    25 -15.27
+  ]
+  wallType "tall house"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation 127.72 -25.82 0
+  name "building(235)"
+  corners [
+    0 0
+    22.09 -13.46
+    16.16 -23.32
+    -5.93 -9.84
+  ]
+  wallType "old brick building"
+}
+SimpleBuilding {
+  translation -41.61 -95.78 0
+  name "building(236)"
+  corners [
+    0 0
+    -1.69 26.01
+    10.25 26.79
+    11.94 0.79
+  ]
+  wallType "blue glass building"
+}
+SimpleBuilding {
+  translation 71.91 -192.36 0
+  name "building(237)"
+  corners [
+    0 0
+    2.48 12.57
+    11.44 10.77
+    8.95 -1.8
+  ]
+  wallType "brick building"
+}
+SimpleBuilding {
+  translation 63.3 -190.65 0
+  name "building(238)"
+  corners [
+    0 0
+    2.44 12.35
+    10.66 10.7
+    8.22 -1.64
+  ]
+  wallType "office building"
+}
+SimpleBuilding {
+  translation 54.37 -188.93 0
+  name "building(239)"
+  corners [
+    0 0
+    2.39 12.12
+    10.8 10.44
+    8.4 -1.68
+  ]
+  wallType "glass building"
+}
+SimpleBuilding {
+  translation 45.11 -185.08 0
+  name "building(240)"
+  corners [
+    0 0
+    2.33 10.83
+    9.46 9.27
+    7.12 -1.55
+  ]
+  wallType "old house"
+}
+SimpleBuilding {
+  translation 37.21 -183.26 0
+  name "building(241)"
+  corners [
+    0 0
+    2.27 10.53
+    8.15 9.26
+    5.88 -1.29
+  ]
+  wallType "concrete building"
+}
+SimpleBuilding {
+  translation 144.96 -205.09 0
+  name "building(246)"
+  corners [
+    0 0
+    2.09 10.59
+    10.88 8.82
+    8.79 -1.77
+  ]
+  wallType "brick building"
+}
+SimpleBuilding {
+  translation 25.17 148.81 0
+  name "building(247)"
+  corners [
+    0 0
+    -0.47 16.77
+    10.38 17.07
+    10.85 0.3
+  ]
+  wallType "old brick building"
+}
+SimpleBuilding {
+  translation 39.98 145.96 0
+  name "building(248)"
+  corners [
+    0 0
+    1.61 8.97
+    17.15 6.14
+    15.53 -2.84
+  ]
+  wallType "blue glass building"
+}
+SimpleBuilding {
+  translation 12.57 149.41 0
+  name "building(249)"
+  corners [
+    0 0
+    -0.46 16.99
+    10.39 17.29
+    10.86 0.31
+  ]
+}
+SimpleBuilding {
+  translation 96.37 -20.3 0
+  name "building(253)"
+  corners [
+    0 0
+    1.44 8.89
+    14.77 6.7
+    13.33 -2.2
+  ]
+  wallType "red and white building"
+}
+SimpleBuilding {
+  translation 86.29 -5.2 0
+  name "building(254)"
+  corners [
+    0 0
+    2.29 11.1
+    28.17 5.69
+    25.88 -5.41
+  ]
+  wallType "tall house"
+}
+SimpleBuilding {
+  translation 95.06 19.32 0
+  name "building(255)"
+  corners [
+    0 0
+    1.13 7.76
+    20.11 4.97
+    18.98 -2.79
+  ]
+  wallType "stone brick"
+}
+SimpleBuilding {
+  translation 93.27 6.31 0
+  name "building(256)"
+  corners [
+    0 0
+    2.37 11.51
+    24.56 6.87
+    22.18 -4.65
+  ]
+  wallType "residential building"
+}
+SimpleBuilding {
+  translation 96.79 -150.43 0
+  name "building(261)"
+  corners [
+    0 0
+    2 12.18
+    10.52 10.77
+    8.53 -1.42
+  ]
+  wallType "red and white building"
+}
+SimpleBuilding {
+  translation 100.86 -122.43 0
+  name "building(263)"
+  corners [
+    0 0
+    1.97 12.03
+    10.82 10.56
+    8.84 -1.47
+  ]
+  wallType "concrete building"
+}
+SimpleBuilding {
+  translation 109.1 -125.23 0
+  name "building(264)"
+  corners [
+    0 0
+    -2.06 -12.55
+    -10.78 -11.11
+    -8.72 1.45
+  ]
+  wallType "glass highrise"
+}
+SimpleBuilding {
+  translation 156.62 -184.64 0
+  name "building(271)"
+  corners [
+    0 0
+    2.23 11.23
+    10.61 9.53
+    8.38 -1.69
+  ]
+  wallType "construction building"
+}
+SimpleBuilding {
+  translation 138.76 -181.92 0
+  name "building(272)"
+  corners [
+    0 0
+    1.96 9.81
+    9.8 8.23
+    7.84 -1.58
+  ]
+  wallType "arcade-style building"
+}
+SimpleBuilding {
+  translation 129.63 -179.11 0
+  name "building(273)"
+  corners [
+    0 0
+    2.13 11.5
+    9.83 10.05
+    7.71 -1.45
+  ]
+}
+SimpleBuilding {
+  translation 128.35 -179.39 0
+  name "building(274)"
+  corners [
+    0 0
+    -8.19 1.54
+    -5.97 13.5
+    2.21 11.97
+  ]
+}
+SimpleBuilding {
+  translation 111.77 -176.45 0
+  name "building(275)"
+  corners [
+    0 0
+    2.11 11.35
+    9.77 9.91
+    7.68 -1.44
+  ]
+  wallType "factory building"
+}
+SimpleBuilding {
+  translation 101.24 -175.73 0
+  name "building(276)"
+  corners [
+    0 0
+    2.36 12.73
+    11.18 11.08
+    8.83 -1.66
+  ]
+  wallType "old house"
+}
+SimpleBuilding {
+  translation 93.28 -174.26 0
+  name "building(277)"
+  corners [
+    0 0
+    2.48 13.43
+    9.73 12.08
+    7.24 -1.36
+  ]
+  wallType "stone wall"
+}
+SimpleBuilding {
+  translation 86.89 -194.45 0
+  name "building(278)"
+  corners [
+    0 0
+    2.27 12.21
+    10.99 10.57
+    8.73 -1.64
+  ]
+  wallType "office building"
+}
+SimpleBuilding {
+  translation 78.08 61.39 0
+  name "building(286)"
+  corners [
+    0 0
+    1.55 8.08
+    13.16 5.83
+    11.61 -2.26
+  ]
+  wallType "glass highrise"
+}
+SimpleBuilding {
+  translation 62.16 21.34 0
+  name "building(287)"
+  corners [
+    0 0
+    3.23 7.54
+    13.04 3.27
+    9.81 -4.26
+  ]
+  wallType "tall house"
+}
+SimpleBuilding {
+  translation 66.73 -8.23 0
+  name "building(288)"
+  corners [
+    0 0
+    2.11 6.72
+    18.72 1.43
+    16.6 -5.29
+  ]
+  wallType "office building"
+}
+SimpleBuilding {
+  translation 69.16 0.38 0
+  name "building(289)"
+  corners [
+    0 0
+    3.39 10.75
+    17.15 6.37
+    13.77 -4.38
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 69.98 -40.16 0
+  name "building(290)"
+  corners [
+    0 0
+    4.67 14.84
+    19.93 9.97
+    15.27 -4.87
+  ]
+  wallType "arcade-style building"
+}
+SimpleBuilding {
+  translation 86.76 -45.39 0
+  name "building(292)"
+  corners [
+    0 0
+    2.82 10.23
+    11.32 7.86
+    8.5 -2.37
+  ]
+  wallType "orange building"
+}
+SimpleBuilding {
+  translation 98.98 -49.47 0
+  name "building(293)"
+  corners [
+    0 0
+    3.05 11.97
+    9.71 10.25
+    6.66 -1.72
+  ]
+  wallType "old brick building"
+}
+SimpleBuilding {
+  translation 58.91 -35.66 0
+  name "building(294)"
+  corners [
+    0 0
+    2.93 9.94
+    9.17 8.07
+    6.24 -1.87
+  ]
+  wallType "office building"
+}
+SimpleBuilding {
+  translation 54.26 -34.28 0
+  name "building(295)"
+  corners [
+    0 0
+    4.47 15.17
+    9.12 13.77
+    7.58 8.56
+    4.65 -1.39
+  ]
+  wallType "arcade-style building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation 47.07 -31.15 0
+  name "building(296)"
+  corners [
+    0 0
+    4.22 14.38
+    10.79 12.41
+    6.56 -1.96
+  ]
+  wallType "old house"
+}
+SimpleBuilding {
+  translation 38.07 -28.55 0
+  name "building(297)"
+  corners [
+    0 0
+    3.08 10.44
+    11.23 8.01
+    8.16 -2.43
+  ]
+  wallType "highrise"
+}
+SimpleBuilding {
+  translation 29 114.19 0
+  name "building(300)"
+  corners [
+    0 0
+    0.9 8.08
+    16.8 6.29
+    15.89 -1.79
+  ]
+  wallType "old office building"
+}
+SimpleBuilding {
+  translation -20.76 116.85 0
+  name "building(301)"
+  corners [
+    0 0
+    -0.42 16.02
+    10.57 16.31
+    10.99 0.29
+  ]
+  wallType "glass building"
+}
+SimpleBuilding {
+  translation 15.92 120.32 0
+  name "building(302)"
+  corners [
+    0 0
+    -0.4 15.4
+    10.18 15.69
+    10.58 0.27
+  ]
+  wallType "classic building"
+}
+SimpleBuilding {
+  translation 3.18 117.53 0
+  name "building(303)"
+  corners [
+    0 0
+    -0.44 16.79
+    10.53 17.07
+    10.96 0.29
+  ]
+  wallType "old building"
+}
+SimpleBuilding {
+  translation -8.68 117.16 0
+  name "building(304)"
+  corners [
+    0 0
+    -0.42 16.26
+    10.58 16.55
+    11 0.29
+  ]
+  wallType "construction building"
+}
+SimpleBuilding {
+  translation 9.58 -13.58 0
+  name "building(305)"
+  corners [
+    0 0
+    -8.04 4.7
+    -6.98 6.54
+    -9.69 8.13
+    -6.97 12.84
+    -12.26 15.93
+    -9.63 20.49
+    6.41 11.1
+    20.22 0.6
+    19.24 -2.87
+  ]
+  wallType "red and white building"
+  roofShape "flat roof"
+}
+SimpleBuilding {
+  translation 0.53 -39.47 0
+  name "building(306)"
+  corners [
+    0 0
+    2.49 8.44
+    14.11 4.96
+    11.6 -3.48
+  ]
+  wallType "old house"
+}
+SumoInterface {
+}
+DEF SUMO_VEHICLE0 Solid {
+  translation 10000 0 0.5
+  rotation 0 0 -1 1.7123097987558156
+  children [
+    TeslaModel3Simple {
+      translation -2.85 0 0
+      color 0.43 0.11 0.1
+      recognitionColors [
+        0.43 0.11 0.1
+      ]
+    }
+  ]
+  name "SUMO vehicle 0"
+}
+DEF SUMO_VEHICLE1 Solid {
+  translation 10000 10 0.5
+  rotation 0 0 1 0.07435825293854766
+  children [
+    TeslaModel3Simple {
+      translation -2.85 0 0
+      color 0.85 0.85 0.05
+      recognitionColors [
+        0.85 0.85 0.05
+      ]
+    }
+  ]
+  name "SUMO vehicle 1"
+}
+DEF SUMO_VEHICLE2 Solid {
+  translation 10000 20 0.5
+  rotation 0 0 1 0.07563399448920188
+  children [
+    TeslaModel3Simple {
+      translation -2.85 0 0
+      color 0.1 0.15 0.18
+      recognitionColors [
+        0.1 0.15 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 2"
+}
+DEF SUMO_VEHICLE3 Solid {
+  translation 10000 30 0.5
+  rotation 0 0 1 0.07435825293855662
+  children [
+    CitroenCZeroSimple {
+      translation -2.85 0 0
+      color 0.62 0.62 0.62
+      recognitionColors [
+        0.62 0.62 0.62
+      ]
+    }
+  ]
+  name "SUMO vehicle 3"
+}
+DEF SUMO_VEHICLE4 Solid {
+  translation 10000 40 0.5
+  rotation 0 0 0.9999999999999999 1.6563519986693716
+  children [
+    RangeRoverSportSVRSimple {
+      translation -2.85 0 0
+      color 0.18 0.28 0.64
+      recognitionColors [
+        0.18 0.28 0.64
+      ]
+    }
+  ]
+  name "SUMO vehicle 4"
+}
+DEF SUMO_VEHICLE5 Solid {
+  translation 10000 50 0.5
+  rotation 0 0 -1 1.8724112288251509
+  children [
+    ToyotaPriusSimple {
+      translation -2.85 0 0
+      color 0.85 0.85 0.05
+      recognitionColors [
+        0.85 0.85 0.05
+      ]
+    }
+  ]
+  name "SUMO vehicle 5"
+}
+DEF SUMO_VEHICLE6 Solid {
+  translation 10000 60 0.5
+  rotation 0 0 -1 3.0694421390955435
+  children [
+    RangeRoverSportSVRSimple {
+      translation -2.85 0 0
+      color 0.18 0.28 0.64
+      recognitionColors [
+        0.18 0.28 0.64
+      ]
+    }
+  ]
+  name "SUMO vehicle 6"
+}
+DEF SUMO_VEHICLE7 Solid {
+  translation 10000 70 0.5
+  rotation 0 0 1 1.656151223974375
+  children [
+    RangeRoverSportSVRSimple {
+      translation -2.85 0 0
+      color 0.43 0.11 0.1
+      recognitionColors [
+        0.43 0.11 0.1
+      ]
+    }
+  ]
+  name "SUMO vehicle 7"
+}
+DEF SUMO_VEHICLE8 Solid {
+  translation 10000 80 0.5
+  rotation 0 0 -1 1.5534270599841062
+  children [
+    ToyotaPriusSimple {
+      translation -2.85 0 0
+      color 0.18 0.28 0.64
+      recognitionColors [
+        0.18 0.28 0.64
+      ]
+    }
+  ]
+  name "SUMO vehicle 8"
+}
+DEF SUMO_VEHICLE9 Solid {
+  translation 10000 90 0.5
+  rotation 0 0 1 0.05861821434999665
+  children [
+    RangeRoverSportSVRSimple {
+      translation -2.85 0 0
+      color 0.18 0.5 0.72
+      recognitionColors [
+        0.18 0.5 0.72
+      ]
+    }
+  ]
+  name "SUMO vehicle 9"
+}
+DEF SUMO_VEHICLE10 Solid {
+  translation 10000 100 0.5
+  rotation 0 0 -1 1.5534270599841065
+  children [
+    ToyotaPriusSimple {
+      translation -2.85 0 0
+      color 0.62 0.62 0.62
+      recognitionColors [
+        0.62 0.62 0.62
+      ]
+    }
+  ]
+  name "SUMO vehicle 10"
+}
+DEF SUMO_VEHICLE11 Solid {
+  translation 10000 110 0.5
+  rotation 0 0 -1 1.8724112288251487
+  children [
+    TeslaModel3Simple {
+      translation -2.85 0 0
+      color 0.72 0.52 0.18
+      recognitionColors [
+        0.72 0.52 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 11"
+}
+DEF SUMO_VEHICLE12 Solid {
+  translation 10000 120 0.5
+  rotation 0 0 -1 3.086307529772495
+  children [
+    ToyotaPriusSimple {
+      translation -2.85 0 0
+      color 0.85 0.85 0.05
+      recognitionColors [
+        0.85 0.85 0.05
+      ]
+    }
+  ]
+  name "SUMO vehicle 12"
+}
+DEF SUMO_VEHICLE13 Solid {
+  translation 10000 130 0.5
+  rotation 0 0 1 2.9964432996002417
+  children [
+    LincolnMKZSimple {
+      translation -2.85 0 0
+      color 0.72 0.52 0.18
+      recognitionColors [
+        0.72 0.52 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 13"
+}
+DEF SUMO_VEHICLE14 Solid {
+  translation 10000 140 0.5
+  rotation 0 0 -1 0.471149173217568
+  children [
+    LincolnMKZSimple {
+      translation -2.85 0 0
+      color 0.72 0.52 0.18
+      recognitionColors [
+        0.72 0.52 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 14"
+}
+DEF SUMO_VEHICLE15 Solid {
+  translation 10000 150 0.5
+  rotation 0 0 1 0.34363821081642426
+  children [
+    ToyotaPriusSimple {
+      translation -2.85 0 0
+      color 0.62 0.62 0.62
+      recognitionColors [
+        0.62 0.62 0.62
+      ]
+    }
+  ]
+  name "SUMO vehicle 15"
+}
+DEF SUMO_VEHICLE16 Solid {
+  translation 10000 160 0.5
+  rotation 0 0 1 0.05861821435000044
+  children [
+    LincolnMKZSimple {
+      translation -2.85 0 0
+      color 0.1 0.15 0.18
+      recognitionColors [
+        0.1 0.15 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 16"
+}
+DEF SUMO_VEHICLE17 Solid {
+  translation 10000 170 0.5
+  rotation 0 0 -1 0.17749372925884643
+  children [
+    MercedesBenzSprinterSimple {
+      translation -2.85 0 0
+      color 0.62 0.62 0.62
+      recognitionColors [
+        0.62 0.62 0.62
+      ]
+    }
+  ]
+  name "SUMO vehicle 17"
+}
+DEF SUMO_VEHICLE18 Solid {
+  translation 10000 180 0.5
+  rotation 0 0 1 1.6561047137020588
+  children [
+    CitroenCZeroSimple {
+      translation -2.85 0 0
+      color 0.18 0.28 0.64
+      recognitionColors [
+        0.18 0.28 0.64
+      ]
+    }
+  ]
+  name "SUMO vehicle 18"
+}
+DEF SUMO_VEHICLE19 Solid {
+  translation 10000 190 0.5
+  rotation 0 0 1 0.07435825293855362
+  children [
+    BmwX5Simple {
+      translation -2.85 0 0
+      color 0.14 0.29 0.16
+      recognitionColors [
+        0.14 0.29 0.16
+      ]
+    }
+  ]
+  name "SUMO vehicle 19"
+}
+DEF SUMO_VEHICLE20 Solid {
+  translation 10000 200 0.5
+  rotation 0 0 -1 1.7477865559582297
+  children [
+    LincolnMKZSimple {
+      translation -2.85 0 0
+      color 0.1 0.15 0.18
+      recognitionColors [
+        0.1 0.15 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 20"
+}
+DEF SUMO_VEHICLE21 Solid {
+  translation 10000 210 0.5
+  rotation 0 0 -1 3.070741466288223
+  children [
+    RangeRoverSportSVRSimple {
+      translation -2.85 0 0
+      color 0.1 0.15 0.18
+      recognitionColors [
+        0.1 0.15 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 21"
+}
+DEF SUMO_VEHICLE22 Solid {
+  translation 10000 220 0.5
+  rotation 0 0 -1 0.1768353001693275
+  children [
+    MercedesBenzSprinterSimple {
+      translation -2.85 0 0
+      color 0.85 0.85 0.05
+      recognitionColors [
+        0.85 0.85 0.05
+      ]
+    }
+  ]
+  name "SUMO vehicle 22"
+}
+DEF SUMO_VEHICLE23 Solid {
+  translation 10000 230 0.5
+  rotation 0 0 1 0.03198006053308484
+  children [
+    BmwX5Simple {
+      translation -2.85 0 0
+      color 0.72 0.52 0.18
+      recognitionColors [
+        0.72 0.52 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 23"
+}
+DEF SUMO_VEHICLE24 Solid {
+  translation 10000 240 0.5
+  rotation 0 0 -1 3.0962655187694073
+  children [
+    LincolnMKZSimple {
+      translation -2.85 0 0
+      color 0.18 0.5 0.72
+      recognitionColors [
+        0.18 0.5 0.72
+      ]
+    }
+  ]
+  name "SUMO vehicle 24"
+}
+DEF SUMO_VEHICLE25 Solid {
+  translation 10000 250 0.5
+  rotation 0 0 1 0.07563399448920188
+  children [
+    BmwX5Simple {
+      translation -2.85 0 0
+      color 0.1 0.15 0.18
+      recognitionColors [
+        0.1 0.15 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 25"
+}
+DEF SUMO_VEHICLE26 Solid {
+  translation 10000 260 0.5
+  rotation 0 0 -1 2.070996342593525
+  children [
+    LincolnMKZSimple {
+      translation -2.85 0 0
+      color 0.18 0.5 0.72
+      recognitionColors [
+        0.18 0.5 0.72
+      ]
+    }
+  ]
+  name "SUMO vehicle 26"
+}
+DEF SUMO_VEHICLE27 Solid {
+  translation 10000 270 0.5
+  rotation 0 0 1 0.06630656232592196
+  children [
+    MercedesBenzSprinterSimple {
+      translation -2.85 0 0
+      color 0.72 0.52 0.18
+      recognitionColors [
+        0.72 0.52 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 27"
+}
+DEF SUMO_VEHICLE28 Solid {
+  translation 10000 280 0.5
+  rotation 0 0 -1 3.0700927689094155
+  children [
+    ToyotaPriusSimple {
+      translation -2.85 0 0
+      color 0.62 0.62 0.62
+      recognitionColors [
+        0.62 0.62 0.62
+      ]
+    }
+  ]
+  name "SUMO vehicle 28"
+}
+DEF SUMO_VEHICLE29 Solid {
+  translation 10000 290 0.5
+  rotation 0 0 -1 2.070996342593525
+  children [
+    BmwX5Simple {
+      translation -2.85 0 0
+      color 0.18 0.5 0.72
+      recognitionColors [
+        0.18 0.5 0.72
+      ]
+    }
+  ]
+  name "SUMO vehicle 29"
+}
+DEF SUMO_VEHICLE30 Solid {
+  translation 10000 300 0.5
+  rotation 0 0 -1 0.06854681258652132
+  children [
+    LincolnMKZSimple {
+      translation -2.85 0 0
+      color 0.1 0.15 0.18
+      recognitionColors [
+        0.1 0.15 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 30"
+}
+DEF SUMO_VEHICLE31 Solid {
+  translation 10000 310 0.5
+  rotation 0 0 -1 1.4923653689993948
+  children [
+    RangeRoverSportSVRSimple {
+      translation -2.85 0 0
+      color 0.18 0.5 0.72
+      recognitionColors [
+        0.18 0.5 0.72
+      ]
+    }
+  ]
+  name "SUMO vehicle 31"
+}
+DEF SUMO_VEHICLE32 Solid {
+  translation 10000 320 0.5
+  rotation 0 0 1 0.07435825293855362
+  children [
+    ToyotaPriusSimple {
+      translation -2.85 0 0
+      color 0.72 0.52 0.18
+      recognitionColors [
+        0.72 0.52 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 32"
+}
+DEF SUMO_VEHICLE33 Solid {
+  translation 10000 330 0.5
+  rotation 0 0 -1 0.2843978880808284
+  children [
+    MercedesBenzSprinterSimple {
+      translation -2.85 0 0
+      color 0.18 0.28 0.64
+      recognitionColors [
+        0.18 0.28 0.64
+      ]
+    }
+  ]
+  name "SUMO vehicle 33"
+}
+DEF SUMO_VEHICLE34 Solid {
+  translation 10000 340 0.5
+  rotation 0 0 -1 1.7595754410145967
+  children [
+    CitroenCZeroSimple {
+      translation -2.85 0 0
+    }
+  ]
+  name "SUMO vehicle 34"
+}
+DEF SUMO_VEHICLE35 Solid {
+  translation 10000 350 0.5
+  rotation 0 0 -1 3.070741466288223
+  children [
+    RangeRoverSportSVRSimple {
+      translation -2.85 0 0
+      color 0.18 0.5 0.72
+      recognitionColors [
+        0.18 0.5 0.72
+      ]
+    }
+  ]
+  name "SUMO vehicle 35"
+}
+DEF SUMO_VEHICLE36 Solid {
+  translation 10000 360 0.5
+  rotation 0 0 -1 2.0709963425935274
+  children [
+    TeslaModel3Simple {
+      translation -2.85 0 0
+      color 0.72 0.52 0.18
+      recognitionColors [
+        0.72 0.52 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 36"
+}
+DEF SUMO_VEHICLE37 Solid {
+  translation 10000 370 0.5
+  rotation 0 0 -1 3.0863163644745417
+  children [
+    BmwX5Simple {
+      translation -2.85 0 0
+      color 0.1 0.15 0.18
+      recognitionColors [
+        0.1 0.15 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 37"
+}
+DEF SUMO_VEHICLE38 Solid {
+  translation 10000 380 0.5
+  rotation 0 0 -1 3.069760448708458
+  children [
+    CitroenCZeroSimple {
+      translation -2.85 0 0
+      color 0.72 0.52 0.18
+      recognitionColors [
+        0.72 0.52 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 38"
+}
+DEF SUMO_VEHICLE39 Solid {
+  translation 10000 390 0.5
+  rotation 0 0 -1 2.102063580535689
+  children [
+    BmwX5Simple {
+      translation -2.85 0 0
+      color 0.62 0.62 0.62
+      recognitionColors [
+        0.62 0.62 0.62
+      ]
+    }
+  ]
+  name "SUMO vehicle 39"
+}
+DEF SUMO_VEHICLE40 Solid {
+  translation 10000 400 0.5
+  rotation 0 0 1 1.6563910931210701
+  children [
+    LincolnMKZSimple {
+      translation -2.85 0 0
+      color 0.18 0.28 0.64
+      recognitionColors [
+        0.18 0.28 0.64
+      ]
+    }
+  ]
+  name "SUMO vehicle 40"
+}
+DEF SUMO_VEHICLE41 Solid {
+  translation 10000 410 0.5
+  rotation 0 0 -1 0.4711491732175739
+  children [
+    BmwX5Simple {
+      translation -2.85 0 0
+      color 0.1 0.15 0.18
+      recognitionColors [
+        0.1 0.15 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 41"
+}
+DEF SUMO_VEHICLE42 Solid {
+  translation 10000 420 0.5
+  rotation 0 0 -1 2.070996342593519
+  children [
+    TeslaModel3Simple {
+      translation -2.85 0 0
+      color 0.43 0.11 0.1
+      recognitionColors [
+        0.43 0.11 0.1
+      ]
+    }
+  ]
+  name "SUMO vehicle 42"
+}
+DEF SUMO_VEHICLE43 Solid {
+  translation 10000 430 0.5
+  rotation 0 0 1 0.07435825293855064
+  children [
+    ToyotaPriusSimple {
+      translation -2.85 0 0
+      color 0.62 0.62 0.62
+      recognitionColors [
+        0.62 0.62 0.62
+      ]
+    }
+  ]
+  name "SUMO vehicle 43"
+}
+DEF SUMO_VEHICLE44 Solid {
+  translation 10000 440 0.5
+  rotation 0 0 1 1.6561512239743756
+  children [
+    MercedesBenzSprinterSimple {
+      translation -2.85 0 0
+      color 0.85 0.85 0.05
+      recognitionColors [
+        0.85 0.85 0.05
+      ]
+    }
+  ]
+  name "SUMO vehicle 44"
+}
+DEF SUMO_VEHICLE45 Solid {
+  translation 10000 450 0.5
+  rotation 0 0 -1 1.720506461408359
+  children [
+    MercedesBenzSprinterSimple {
+      translation -2.85 0 0
+      color 0.1 0.15 0.18
+      recognitionColors [
+        0.1 0.15 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 45"
+}
+DEF SUMO_VEHICLE46 Solid {
+  translation 10000 460 0.5
+  rotation 0 0 1 0.05861821435000423
+  children [
+    MercedesBenzSprinterSimple {
+      translation -2.85 0 0
+      color 0.62 0.62 0.62
+      recognitionColors [
+        0.62 0.62 0.62
+      ]
+    }
+  ]
+  name "SUMO vehicle 46"
+}
+DEF SUMO_VEHICLE47 Solid {
+  translation 10000 470 0.5
+  rotation 0 0 1 0.07605496064548871
+  children [
+    TeslaModel3Simple {
+      hidden translation_1 2.94 -0.86 0.03
+      hidden rotation_1 1 0 0 1.570796
+      hidden translation_2 2.94 0.86 0.03
+      hidden rotation_2 0 -0.7071067811865476 -0.7071067811865476 -3.141593
+      hidden translation_3 0 -0.86 0.02
+      hidden rotation_3 1 0 0 1.570796
+      hidden translation_4 0 0.86 0.02
+      hidden rotation_4 0 0.7071067811865476 0.7071067811865476 3.141593
+      translation -2.85 0 0
+      color 0.1 0.15 0.18
+      recognitionColors [
+        0.1 0.15 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 47"
+}
+DEF SUMO_VEHICLE48 Solid {
+  translation 10000 480 0.5
+  rotation 0 0 1 0.03198006053308484
+  children [
+    BmwX5Simple {
+      translation -2.85 0 0
+    }
+  ]
+  name "SUMO vehicle 48"
+}
+DEF SUMO_VEHICLE49 Solid {
+  translation 10000 490 0.5
+  rotation 0 0 -1 3.0962655187693953
+  children [
+    TeslaModel3Simple {
+      hidden translation_1 2.94 -0.86 0.03
+      hidden rotation_1 1 0 0 1.570796
+      hidden translation_2 2.94 0.86 0.03
+      hidden rotation_2 0 -0.7071067811865476 -0.7071067811865476 -3.141593
+      hidden translation_3 0 -0.86 0.02
+      hidden rotation_3 1 0 0 1.570796
+      hidden translation_4 0 0.86 0.02
+      hidden rotation_4 0 0.7071067811865476 0.7071067811865476 3.141593
+      translation -2.85 0 0
+      color 0.14 0.29 0.16
+      recognitionColors [
+        0.14 0.29 0.16
+      ]
+    }
+  ]
+  name "SUMO vehicle 49"
+}
+DEF SUMO_VEHICLE50 Solid {
+  translation 10000 500 0.5
+  rotation 0 0 -1 0.1774937292588653
+  children [
+    LincolnMKZSimple {
+      translation -2.85 0 0
+      color 0.1 0.15 0.18
+      recognitionColors [
+        0.1 0.15 0.18
+      ]
+    }
+  ]
+  name "SUMO vehicle 50"
+}
+DEF SUMO_VEHICLE51 Solid {
+  translation 10000 510 0.5
+  rotation 0 0 -1 1.4929367035362822
+  children [
+    RangeRoverSportSVRSimple {
+      translation -2.85 0 0
+      color 0.85 0.85 0.05
+      recognitionColors [
+        0.85 0.85 0.05
+      ]
+    }
+  ]
+  name "SUMO vehicle 51"
+}
+DEF SUMO_VEHICLE52 Solid {
+  translation 10000 520 0.5
+  rotation 0 0 -1 1.7982462975973192
+  children [
+    MercedesBenzSprinterSimple {
+      translation -2.85 0 0
+      color 0.85 0.85 0.05
+      recognitionColors [
+        0.85 0.85 0.05
+      ]
+    }
+  ]
+  name "SUMO vehicle 52"
+}
+DEF SUMO_VEHICLE53 Solid {
+  translation 10000 530 0.5
+  rotation 0 0 -0.9999999999999999 3.0700927689094173
+  children [
+    ToyotaPriusSimple {
+      translation -2.85 0 0
+      color 0.62 0.62 0.62
+      recognitionColors [
+        0.62 0.62 0.62
+      ]
+    }
+  ]
+  name "SUMO vehicle 53"
+}
+DEF SUMO_VEHICLE54 Solid {
+  translation 10000 540 0.5
+  rotation 0 0 -1 1.4930190433037818
+  children [
+    LincolnMKZSimple {
+      translation -2.85 0 0
+      color 0.85 0.85 0.05
+      recognitionColors [
+        0.85 0.85 0.05
+      ]
+    }
+  ]
+  name "SUMO vehicle 54"
+}
+DEF SUMO_VEHICLE55 Solid {
+  translation -158.4713425937298 -376.3482844589017 0.358
+  rotation 0 0 -1 2.07099634259352
+  children [
+    RangeRoverSportSVRSimple {
+      translation -2.85 0 0
+      color 0.18 0.5 0.72
+      recognitionColors [
+        0.18 0.5 0.72
+      ]
+    }
+  ]
+  name "99"
+  linearVelocity -6.434017972957804 -11.771794030140654 0
+  angularVelocity 0 0 8.881784197001252e-15
+}
